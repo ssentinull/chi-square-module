@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/IbnuAhsani/content-based-journal-recommender-system#readme",
   "dependencies": {
-    "csv-parser": "^2.3.2"
+    "lower-case": "^2.0.1",
+    "neat-csv": "^5.1.0"
   }
 }

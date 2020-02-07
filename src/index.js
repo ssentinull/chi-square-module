@@ -1,9 +1,15 @@
-const csv = require("csv-parser");
 const fs = require("fs");
-const results = [];
+const neatCsv = require("neat-csv");
 
 const DATA_DIR = "./data/1000-sample-data.csv";
 
-fs.createReadStream(DATA_DIR)
-  .pipe(csv())
-  .on("data", data => results.push(data));
+const readCsv = async fileDir => {
+  const csvText = fs.readFileSync(fileDir, "utf-8");
+  const formattedCsv = await neatCsv(csvText);
+  return formattedCsv;
+};
+
+(async () => {
+  const csv = await readCsv(DATA_DIR);
+  console.log(csv);
+})();

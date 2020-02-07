@@ -24,6 +24,8 @@
   "homepage": "https://github.com/IbnuAhsani/content-based-journal-recommender-system#readme",
   "dependencies": {
     "lower-case": "^2.0.1",
-    "neat-csv": "^5.1.0"
+    "natural": "^0.6.3",
+    "neat-csv": "^5.1.0",
+    "stopword": "^0.3.4"
   }
 }

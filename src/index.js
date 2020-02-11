@@ -42,14 +42,18 @@ const generateTokens = abstract => {
   return tokensStemmed;
 };
 
+const removeDuplicateTokens = tokens => [...new Set(tokens)];
+
 (async () => {
   const csvDataFile = await readCsv(DATASET_DIR);
 
   for (const row of csvDataFile) {
     const { ARTICLE_ABSTRACT } = row;
     const tokens = generateTokens(ARTICLE_ABSTRACT);
+    const tokensDuplicateRemoved = removeDuplicateTokens(tokens);
 
     row.TOKENS = tokens;
+    row.TOKENS_DUPLICATE_REMOVED = tokensDuplicateRemoved;
   }
 
   writeJson(JSON_SAVE_DIR, csvDataFile, replacer, 2);

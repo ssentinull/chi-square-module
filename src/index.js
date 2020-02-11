@@ -7,8 +7,10 @@ const { WordTokenizer, StemmerId } = require("natural");
 const DATASET_DIR = "./data/1000-sample-data.csv";
 const JSON_SAVE_DIR = "./data/csv.json";
 
+const UTF_ENCODING_SCHEME = "utf-8";
+
 const readCsv = async fileDir => {
-  const csvText = fs.readFileSync(fileDir, "utf-8");
+  const csvText = fs.readFileSync(fileDir, UTF_ENCODING_SCHEME);
   const formattedCsv = await neatCsv(csvText);
 
   return formattedCsv;
@@ -52,5 +54,5 @@ const generateTokens = abstract => {
 
   writeJson(JSON_SAVE_DIR, csvDataFile, replacer, 2);
 
-  const csvDataJson = readJson("csv.json", "utf-8");
+  const csvDataJson = readJson(JSON_SAVE_DIR, UTF_ENCODING_SCHEME);
 })();

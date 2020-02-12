@@ -1,23 +1,11 @@
-const sw = require("stopword");
-const { lowerCase } = require("lower-case");
-const { WordTokenizer, StemmerId } = require("natural");
+const {
+  generateTokens,
+  removeDuplicateTokens
+} = require("./utils/text-processing.util");
 const { readCsv, readJson, writeJson } = require("./utils/io.util");
 
 const DATASET_DIR = "./data/1000-sample-data.csv";
 const JSON_SAVE_DIR = "./data/csv.json";
-
-const generateTokens = abstract => {
-  const tokenizer = new WordTokenizer();
-
-  const abstractLowercase = lowerCase(abstract);
-  const abstractTokens = tokenizer.tokenize(abstractLowercase);
-  const tokensStopwordRemoved = sw.removeStopwords(abstractTokens, sw.id);
-  const tokensStemmed = tokensStopwordRemoved.map(word => StemmerId.stem(word));
-
-  return tokensStemmed;
-};
-
-const removeDuplicateTokens = tokens => [...new Set(tokens)];
 
 (async () => {
   const csvDataFile = await readCsv(DATASET_DIR);

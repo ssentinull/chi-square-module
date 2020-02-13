@@ -11,6 +11,7 @@ const chiSquareFeatureSelection = jsonData => {
   const [featureVectors, tokenList] = [[], []];
   let [aValue, bValue, cValue, dValue] = [0, 0, 0, 0];
 
+  // spread the tokens of the articles into a single layer array of objects
   for (const jsonDataRow of jsonData) {
     const { JOURNAL_ID, ARTICLE_ID, TOKENS_DUPLICATE_REMOVED } = jsonDataRow;
 
@@ -21,12 +22,15 @@ const chiSquareFeatureSelection = jsonData => {
     }
   }
 
+  // compute the A, B, C, D, and X_SQUARED values
+  // go over every single tokens that's been spread out
   for (const tokenListRow of tokenList) {
     const {
       JOURNAL_ID: JOURNAL_ID_TOKEN_LIST,
       TOKEN: TOKEN_TOKEN_LIST
     } = tokenListRow;
 
+    // check for the existance of the tokens in each articles
     for (const jsonDataRow of jsonData) {
       const {
         JOURNAL_ID: JOURNAL_ID_JSON_DATA,
@@ -75,6 +79,24 @@ const chiSquareFeatureSelection = jsonData => {
     ] = [aValue, bValue, cValue, dValue, xSquared];
     [aValue, bValue, cValue, dValue] = [0, 0, 0, 0];
   }
+
+  for (const jsonDataRow of jsonData) {
+    const { JOURNAL_ID, ARTICLE_ID } = jsonDataRow;
+
+    const articleTokens = tokenList
+      .filter(
+        item => item.JOURNAL_ID === JOURNAL_ID && item.ARTICLE_ID === ARTICLE_ID
+      )
+      .map(item => {
+        delete item.JOURNAL_ID;
+        delete item.ARTICLE_ID;
+        return item;
+      });
+
+    jsonDataRow.TOKENS_CHI_SQUARED = articleTokens;
+  }
+
+  return jsonData;
 };
 
 (async () => {

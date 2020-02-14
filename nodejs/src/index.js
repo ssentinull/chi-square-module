@@ -4,7 +4,7 @@ const {
 } = require("./utils/text-processing.util");
 const { readCsv, readJson, writeJson } = require("./utils/io.util");
 
-const DATASET_DIR = "./data/1000-sample-data.csv";
+const DATASET_DIR = "./data/dataset-sample.csv";
 const JSON_SAVE_DIR = "./data/csv.json";
 
 const chiSquareFeatureSelection = jsonData => {

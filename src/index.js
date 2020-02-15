@@ -66,7 +66,7 @@ const chiSquareFeatureSelection = jsonData => {
       }
     }
 
-    const xSquared =
+    const chiSquared =
       (aValue * dValue - bValue * cValue) ** 2 /
       ((aValue + bValue) * (cValue + dValue));
 
@@ -75,8 +75,8 @@ const chiSquareFeatureSelection = jsonData => {
       tokenListRow.B_VALUE,
       tokenListRow.C_VALUE,
       tokenListRow.D_VALUE,
-      tokenListRow.X_SQUARED
-    ] = [aValue, bValue, cValue, dValue, xSquared];
+      tokenListRow.CHI_SQUARED
+    ] = [aValue, bValue, cValue, dValue, chiSquared];
     [aValue, bValue, cValue, dValue] = [0, 0, 0, 0];
   }
 
@@ -93,11 +93,14 @@ const chiSquareFeatureSelection = jsonData => {
         return item;
       });
 
-    jsonDataRow.TOKENS_CHI_SQUARED = articleTokens;
+    jsonDataRow.TOKENS_SCORES = articleTokens;
   }
 
   return jsonData;
 };
+
+const sortChiSquaredValueDescendingly = list =>
+  list.sort((a, b) => b.CHI_SQUARED - a.CHI_SQUARED);
 
 (async () => {
   const csvDataFile = await readCsv(DATASET_DIR);
@@ -117,4 +120,10 @@ const chiSquareFeatureSelection = jsonData => {
 
   const csvDataJson = readJson(JSON_SAVE_DIR);
   const featureVectors = chiSquareFeatureSelection(csvDataJson);
+
+  for (const row of featureVectors) {
+    const { TOKENS_SCORES } = row;
+
+    sortChiSquaredValueDescendingly(TOKENS_SCORES);
+  }
 })();

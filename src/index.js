@@ -7,20 +7,8 @@ const { readCsv, readJson, writeJson } = require("./utils/io.util");
 const DATASET_DIR = "./data/dataset-sample.csv";
 const JSON_SAVE_DIR = "./data/csv.json";
 
-const chiSquareFeatureSelection = jsonData => {
-  const [featureVectors, tokenList] = [[], []];
+const chiSquareFeatureSelection = (tokenList, jsonData) => {
   let [aValue, bValue, cValue, dValue] = [0, 0, 0, 0];
-
-  // spread the tokens of the articles into a single layer array of objects
-  for (const jsonDataRow of jsonData) {
-    const { JOURNAL_ID, ARTICLE_ID, TOKENS_DUPLICATE_REMOVED } = jsonDataRow;
-
-    for (const token of TOKENS_DUPLICATE_REMOVED) {
-      const tokenListObj = { JOURNAL_ID, ARTICLE_ID, TOKEN: token };
-
-      tokenList.push(tokenListObj);
-    }
-  }
 
   // compute the A, B, C, D, and X_SQUARED values
   // go over every single tokens that's been spread out
@@ -66,7 +54,7 @@ const chiSquareFeatureSelection = jsonData => {
       }
     }
 
-    const chiSquared =
+    const chiSquare =
       (aValue * dValue - bValue * cValue) ** 2 /
       ((aValue + bValue) * (cValue + dValue));
 
@@ -76,7 +64,7 @@ const chiSquareFeatureSelection = jsonData => {
       tokenListRow.C_VALUE,
       tokenListRow.D_VALUE,
       tokenListRow.CHI_SQUARED
-    ] = [aValue, bValue, cValue, dValue, chiSquared];
+    ] = [aValue, bValue, cValue, dValue, chiSquare];
     [aValue, bValue, cValue, dValue] = [0, 0, 0, 0];
   }
 
@@ -99,8 +87,25 @@ const chiSquareFeatureSelection = jsonData => {
   return jsonData;
 };
 
-const sortChiSquaredValueDescendingly = list =>
+const sortChiSquareValueDescendingly = list =>
   list.sort((a, b) => b.CHI_SQUARED - a.CHI_SQUARED);
+
+// spread the tokens of the articles into a single layer array of objects
+const createTokenList = jsonData => {
+  const tokenList = [];
+
+  for (const jsonDataRow of jsonData) {
+    const { JOURNAL_ID, ARTICLE_ID, TOKENS_DUPLICATE_REMOVED } = jsonDataRow;
+
+    for (const token of TOKENS_DUPLICATE_REMOVED) {
+      const tokenListObj = { JOURNAL_ID, ARTICLE_ID, TOKEN: token };
+
+      tokenList.push(tokenListObj);
+    }
+  }
+
+  return tokenList;
+};
 
 (async () => {
   const csvDataFile = await readCsv(DATASET_DIR);
@@ -119,11 +124,12 @@ const sortChiSquaredValueDescendingly = list =>
   writeJson(JSON_SAVE_DIR, csvDataFile);
 
   const csvDataJson = readJson(JSON_SAVE_DIR);
-  const featureVectors = chiSquareFeatureSelection(csvDataJson);
+  const tokenList = createTokenList(csvDataJson);
+  const featureVectors = chiSquareFeatureSelection(tokenList, csvDataJson);
 
   for (const row of featureVectors) {
     const { TOKENS_SCORES } = row;
 
-    sortChiSquaredValueDescendingly(TOKENS_SCORES);
+    sortChiSquareValueDescendingly(TOKENS_SCORES);
   }
 })();

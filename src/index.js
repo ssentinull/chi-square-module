@@ -45,9 +45,29 @@ const JSON_SAVE_DIR = "./data/csv.json";
     item => item.JOURNAL_ID
   );
 
+  const featureVectorsAbstractAppendedList = [];
+
   for (const key in groupedFeatureVectors) {
     const groupedFeatureVectorsRow = groupedFeatureVectors[key];
+    const sortedGroupedFeatureVectorsRow = sortChiSquareValueDescendingly(
+      groupedFeatureVectorsRow
+    );
 
-    sortChiSquareValueDescendingly(groupedFeatureVectorsRow);
+    const slicedSortedGroupedFeatureVectorsRow = sortedGroupedFeatureVectorsRow
+      .slice(0, 3)
+      .map(item => {
+        const { JOURNAL_ID, ARTICLE_ID } = item;
+        const { ARTICLE_ABSTRACT } = csvDataJson.find(
+          item =>
+            item.JOURNAL_ID === JOURNAL_ID && item.ARTICLE_ID === ARTICLE_ID
+        );
+
+        item.ARTICLE_ABSTRACT = ARTICLE_ABSTRACT;
+        return item;
+      });
+
+    featureVectorsAbstractAppendedList.push(
+      ...slicedSortedGroupedFeatureVectorsRow
+    );
   }
 })();

@@ -68,6 +68,13 @@ const chiSquareFeatureSelection = (tokenList, jsonData) => {
     [aValue, bValue, cValue, dValue] = [0, 0, 0, 0];
   }
 
+  return jsonData;
+};
+
+const sortChiSquareValueDescendingly = list =>
+  list.sort((a, b) => b.CHI_SQUARED - a.CHI_SQUARED);
+
+const groupTokenListWithJsonData = (tokenList, jsonData) => {
   for (const jsonDataRow of jsonData) {
     const { JOURNAL_ID, ARTICLE_ID } = jsonDataRow;
 
@@ -83,12 +90,7 @@ const chiSquareFeatureSelection = (tokenList, jsonData) => {
 
     jsonDataRow.TOKENS_SCORES = articleTokens;
   }
-
-  return jsonData;
 };
-
-const sortChiSquareValueDescendingly = list =>
-  list.sort((a, b) => b.CHI_SQUARED - a.CHI_SQUARED);
 
 // spread the tokens of the articles into a single layer array of objects
 const createTokenList = jsonData => {
@@ -126,6 +128,8 @@ const createTokenList = jsonData => {
   const csvDataJson = readJson(JSON_SAVE_DIR);
   const tokenList = createTokenList(csvDataJson);
   const featureVectors = chiSquareFeatureSelection(tokenList, csvDataJson);
+
+  groupTokenListWithJsonData(tokenList, featureVectors);
 
   for (const row of featureVectors) {
     const { TOKENS_SCORES } = row;

@@ -76,30 +76,11 @@ const createTokenList = jsonData => {
   return tokenList;
 };
 
-const groupTokenListWithJsonData = (tokenList, jsonData) => {
-  for (const jsonDataRow of jsonData) {
-    const { JOURNAL_ID, ARTICLE_ID } = jsonDataRow;
-
-    const articleTokens = tokenList
-      .filter(
-        item => item.JOURNAL_ID === JOURNAL_ID && item.ARTICLE_ID === ARTICLE_ID
-      )
-      .map(item => {
-        delete item.JOURNAL_ID;
-        delete item.ARTICLE_ID;
-        return item;
-      });
-
-    jsonDataRow.TOKENS_SCORES = articleTokens;
-  }
-};
-
 const sortChiSquareValueDescendingly = list =>
   list.sort((a, b) => b.CHI_SQUARED - a.CHI_SQUARED);
 
 module.exports = {
   calculateChiSquareValues,
   createTokenList,
-  groupTokenListWithJsonData,
   sortChiSquareValueDescendingly
 };

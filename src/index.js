@@ -7,7 +7,6 @@ const {
 const {
   calculateChiSquareValues,
   createTokenList,
-  groupTokenListWithJsonData,
   sortChiSquareValueDescendingly
 } = require("./utils/chi-square.util");
 

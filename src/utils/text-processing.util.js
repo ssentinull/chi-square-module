@@ -6,7 +6,8 @@ const generateTokens = abstract => {
   const tokenizer = new WordTokenizer();
 
   const abstractLowercase = lowerCase(abstract);
-  const abstractTokens = tokenizer.tokenize(abstractLowercase);
+  const abstractDigitsRemoved = abstractLowercase.replace(/\d+/g, "");
+  const abstractTokens = tokenizer.tokenize(abstractDigitsRemoved);
   const tokensStopwordRemoved = sw.removeStopwords(abstractTokens, sw.id);
   const tokensStemmed = tokensStopwordRemoved.map(word => StemmerId.stem(word));
 

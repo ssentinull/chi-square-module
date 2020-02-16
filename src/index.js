@@ -1,8 +1,9 @@
+const groupBy = require("lodash.groupby");
+const { readCsv, readJson, writeJson } = require("./utils/io.util");
 const {
   generateTokens,
   removeDuplicateTokens
 } = require("./utils/text-processing.util");
-const { readCsv, readJson, writeJson } = require("./utils/io.util");
 const {
   calculateChiSquareValues,
   createTokenList,
@@ -38,5 +39,16 @@ const JSON_SAVE_DIR = "./data/csv.json";
     const featureVector = { ...tokenListRow, ...chiSquareValues };
 
     featureVectors.push(featureVector);
+  }
+
+  const groupedFeatureVectors = groupBy(
+    featureVectors,
+    item => item.JOURNAL_ID
+  );
+
+  for (const key in groupedFeatureVectors) {
+    const groupedFeatureVectorsRow = groupedFeatureVectors[key];
+
+    sortChiSquareValueDescendingly(groupedFeatureVectorsRow);
   }
 })();

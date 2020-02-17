@@ -24,6 +24,7 @@
   "homepage": "https://github.com/IbnuAhsani/content-based-journal-recommender-system#readme",
   "dependencies": {
     "lodash.groupby": "^4.6.0",
+    "lodash.uniqby": "^4.7.0",
     "lower-case": "^2.0.1",
     "natural": "^0.6.3",
     "neat-csv": "^5.1.0",

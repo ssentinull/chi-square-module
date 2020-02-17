@@ -1,4 +1,5 @@
 const groupBy = require("lodash.groupby");
+const uniqBy = require("lodash.uniqby");
 const { readCsv, readJson, writeJson } = require("./utils/io.util");
 const {
   generateTokens,
@@ -115,4 +116,17 @@ const JSON_SAVE_DIR = "./data/csv.json";
 
   console.log("done appending abstract to feature vector");
   console.timeEnd("append-abstract-to-feature-vectors");
+  console.log("\n");
+
+  ////////////////////
+
+  console.time("filtering-duplicate-feature-vectors");
+
+  const uniqueFeatureVectorList = uniqBy(
+    featureVectorsAbstractAppendedList,
+    item => item.TOKEN
+  );
+
+  console.log("done filtering duplicate feature vectors");
+  console.timeEnd("filtering-duplicate-feature-vectors");
 })();

@@ -15,6 +15,8 @@ const DATASET_DIR = "./data/dataset-sample.csv";
 const JSON_SAVE_DIR = "./data/csv.json";
 
 (async () => {
+  const processBegin = Date.now();
+
   console.time("read-csv");
 
   const csvDataFile = await readCsv(DATASET_DIR);
@@ -129,4 +131,13 @@ const JSON_SAVE_DIR = "./data/csv.json";
 
   console.log("done filtering duplicate feature vectors");
   console.timeEnd("filtering-duplicate-feature-vectors");
+  console.log("\n");
+
+  const processEnd = Date.now();
+
+  console.log(
+    "total execution time :",
+    (processEnd - processBegin) / 1000,
+    "seconds"
+  );
 })();

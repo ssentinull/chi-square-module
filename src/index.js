@@ -14,7 +14,17 @@ const DATASET_DIR = "./data/dataset-sample.csv";
 const JSON_SAVE_DIR = "./data/csv.json";
 
 (async () => {
+  console.time("read-csv");
+
   const csvDataFile = await readCsv(DATASET_DIR);
+
+  console.log("done reading .csv");
+  console.timeEnd("read-csv");
+  console.log("\n");
+
+  //////////////////////////////
+
+  console.time("preprocessing-text");
 
   for (const row of csvDataFile) {
     const { ARTICLE_ABSTRACT } = row;
@@ -27,7 +37,23 @@ const JSON_SAVE_DIR = "./data/csv.json";
     ];
   }
 
+  console.log("done preprocessing .csv text");
+  console.timeEnd("preprocessing-text");
+  console.log("\n");
+
+  //////////////////////////////
+
+  console.time("saving-json");
+
   writeJson(JSON_SAVE_DIR, csvDataFile);
+
+  console.log("done saving .json");
+  console.timeEnd("saving-json");
+  console.log("\n");
+
+  //////////////////////////////
+
+  console.time("creating-token-list");
 
   const csvDataJson = readJson(JSON_SAVE_DIR);
   const tokenList = createTokenList(csvDataJson);
@@ -40,10 +66,26 @@ const JSON_SAVE_DIR = "./data/csv.json";
     featureVectors.push(featureVector);
   }
 
+  console.log("done creating token list");
+  console.timeEnd("creating-token-list");
+  console.log("\n");
+
+  //////////////////////////////
+
+  console.time("grouping-feature-vectors");
+
   const groupedFeatureVectors = groupBy(
     featureVectors,
     item => item.JOURNAL_ID
   );
+
+  console.log("done grouping feature vectors");
+  console.timeEnd("grouping-feature-vectors");
+  console.log("\n");
+
+  //////////////////////////////
+
+  console.time("append-abstract-to-feature-vectors");
 
   const featureVectorsAbstractAppendedList = [];
 
@@ -70,4 +112,7 @@ const JSON_SAVE_DIR = "./data/csv.json";
       ...slicedSortedGroupedFeatureVectorsRow
     );
   }
+
+  console.log("done appending abstract to feature vector");
+  console.timeEnd("append-abstract-to-feature-vectors");
 })();

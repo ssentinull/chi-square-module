@@ -76,11 +76,26 @@ const createTokenList = jsonData => {
   return tokenList;
 };
 
+const mapAbstractFeatureVectors = (list, jsonData) =>
+  list.map(item => {
+    const { JOURNAL_ID, ARTICLE_ID } = item;
+    const { ARTICLE_ABSTRACT } = jsonData.find(
+      item => item.JOURNAL_ID === JOURNAL_ID && item.ARTICLE_ID === ARTICLE_ID
+    );
+
+    item.ARTICLE_ABSTRACT = ARTICLE_ABSTRACT;
+    return item;
+  });
+
+const sliceTopTermsFeatureVectors = (list, mTerms) => list.slice(0, mTerms);
+
 const sortChiSquareValueDescendingly = list =>
   list.sort((a, b) => b.CHI_SQUARE - a.CHI_SQUARE);
 
 module.exports = {
   calculateChiSquareValues,
   createTokenList,
+  mapAbstractFeatureVectors,
+  sliceTopTermsFeatureVectors,
   sortChiSquareValueDescendingly
 };

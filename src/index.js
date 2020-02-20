@@ -8,6 +8,8 @@ const {
 const {
   calculateChiSquareValues,
   createTokenList,
+  mapAbstractFeatureVectors,
+  sliceTopTermsFeatureVectors,
   sortChiSquareValueDescendingly
 } = require("./utils/chi-square.util");
 
@@ -97,28 +99,23 @@ const JSON_SAVE_DIR = "./data/csv.json";
     const sortedFeatureVectorsRow = sortChiSquareValueDescendingly(
       featureVectorsRow
     );
+    const slicedFeatureVectorsRow = sliceTopTermsFeatureVectors(
+      sortedFeatureVectorsRow,
+      3
+    );
+    const mappedFeatureVectorsRow = mapAbstractFeatureVectors(
+      slicedFeatureVectorsRow,
+      csvDataJson
+    );
 
-    const slicedFeatureVectorsRow = sortedFeatureVectorsRow
-      .slice(0, 3)
-      .map(item => {
-        const { JOURNAL_ID, ARTICLE_ID } = item;
-        const { ARTICLE_ABSTRACT } = csvDataJson.find(
-          item =>
-            item.JOURNAL_ID === JOURNAL_ID && item.ARTICLE_ID === ARTICLE_ID
-        );
-
-        item.ARTICLE_ABSTRACT = ARTICLE_ABSTRACT;
-        return item;
-      });
-
-    featureVectorsAbstractAppendedList.push(...slicedFeatureVectorsRow);
+    featureVectorsAbstractAppendedList.push(...mappedFeatureVectorsRow);
   }
 
   console.log("done appending abstract to feature vector");
   console.timeEnd("append-abstract-to-feature-vectors");
   console.log("\n");
 
-  ////////////////////
+  //////////////////////////////
 
   console.time("filtering-duplicate-feature-vectors");
 

@@ -1,7 +1,7 @@
 const calculateChiSquareValues = (tokenListRow, jsonData) => {
   let [aValue, bValue, cValue, dValue] = [0, 0, 0, 0];
 
-  // compute the A, B, C, D, and X_SQUARED values
+  // compute the A, B, C, D, and X_SQUARE values
   // go over every single tokens that's been spread out
   const {
     JOURNAL_ID: JOURNAL_ID_TOKEN_LIST,
@@ -53,7 +53,7 @@ const calculateChiSquareValues = (tokenListRow, jsonData) => {
     B_VALUE: bValue,
     C_VALUE: cValue,
     D_VALUE: dValue,
-    CHI_SQUARED: chiSquare
+    CHI_SQUARE: chiSquare
   };
 
   return chiSquareValues;
@@ -77,7 +77,7 @@ const createTokenList = jsonData => {
 };
 
 const sortChiSquareValueDescendingly = list =>
-  list.sort((a, b) => b.CHI_SQUARED - a.CHI_SQUARED);
+  list.sort((a, b) => b.CHI_SQUARE - a.CHI_SQUARE);
 
 module.exports = {
   calculateChiSquareValues,

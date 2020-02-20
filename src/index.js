@@ -93,12 +93,12 @@ const JSON_SAVE_DIR = "./data/csv.json";
   const featureVectorsAbstractAppendedList = [];
 
   for (const key in groupedFeatureVectors) {
-    const groupedFeatureVectorsRow = groupedFeatureVectors[key];
-    const sortedGroupedFeatureVectorsRow = sortChiSquareValueDescendingly(
-      groupedFeatureVectorsRow
+    const featureVectorsRow = groupedFeatureVectors[key];
+    const sortedFeatureVectorsRow = sortChiSquareValueDescendingly(
+      featureVectorsRow
     );
 
-    const slicedSortedGroupedFeatureVectorsRow = sortedGroupedFeatureVectorsRow
+    const slicedFeatureVectorsRow = sortedFeatureVectorsRow
       .slice(0, 3)
       .map(item => {
         const { JOURNAL_ID, ARTICLE_ID } = item;
@@ -111,9 +111,7 @@ const JSON_SAVE_DIR = "./data/csv.json";
         return item;
       });
 
-    featureVectorsAbstractAppendedList.push(
-      ...slicedSortedGroupedFeatureVectorsRow
-    );
+    featureVectorsAbstractAppendedList.push(...slicedFeatureVectorsRow);
   }
 
   console.log("done appending abstract to feature vector");

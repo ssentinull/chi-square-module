@@ -1,5 +1,6 @@
 const groupBy = require("lodash.groupby");
 const uniqBy = require("lodash.uniqby");
+const { TfIdf } = require("natural");
 const { readCsv, readJson, writeJson } = require("./utils/io.util");
 const {
   generateTokens,
@@ -127,6 +128,40 @@ const JSON_SAVE_DIR = "./data/csv.json";
   console.log("done filtering duplicate feature vectors");
   console.timeEnd("filtering-duplicate-feature-vectors");
   console.log("\n");
+
+  //////////////////////////////
+
+  console.time("calculate-tfidf-score");
+
+  const featureVectorsTfidf = [];
+
+  for (const csvDataJsonRow of csvDataJson) {
+    const { JOURNAL_ID, TOKENS } = csvDataJsonRow;
+    const tfidf = new TfIdf();
+
+    tfidf.addDocument(TOKENS);
+
+    let tfidfScores = [];
+
+    for (const uniqueFeatureVectorRow of uniqueFeatureVectorList) {
+      const { TOKEN } = uniqueFeatureVectorRow;
+
+      tfidf.tfidfs(TOKEN, function(i, measure) {
+        tfidfScores.push(measure);
+      });
+    }
+
+    tfidfScores.push(JOURNAL_ID);
+    featureVectorsTfidf.push(tfidfScores);
+
+    tfidfScores = [];
+  }
+
+  console.log("done calculating tf-idf scores");
+  console.timeEnd("calculate-tfidf-score");
+  console.log("\n");
+
+  //////////////////////////////
 
   const processEnd = Date.now();
 

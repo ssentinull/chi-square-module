@@ -5,7 +5,7 @@ const { readCsv, readJson, writeJson } = require("./utils/io.util");
 const {
   generateTokens,
   removeDuplicateTokens
-} = require("./utils/text-processing.util");
+} = require("./utils/text-normalization.util");
 const {
   calculateChiSquareValues,
   createTokenList,

@@ -1,5 +1,6 @@
 const groupBy = require("lodash.groupby");
 const uniqBy = require("lodash.uniqby");
+const csvWriter = require("csv-writer");
 const { calculateTfIdfScores } = require("./utils/tf-idf.util");
 const { readCsv, readJson, writeJson } = require("./utils/io.util");
 const {
@@ -151,4 +152,13 @@ const JSON_SAVE_DIR = "./data/csv.json";
     (processEnd - processBegin) / 1000,
     "seconds"
   );
+
+  const createCsvWriterObj = csvWriter.createArrayCsvWriter;
+  const csvWriteObj = createCsvWriterObj({
+    path: "./data/feature-vectors.csv"
+  });
+
+  csvWriteObj
+    .writeRecords(featureVectorsTfidf)
+    .then(() => console.log("done writing csv"));
 })();

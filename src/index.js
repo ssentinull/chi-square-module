@@ -1,8 +1,7 @@
 const groupBy = require("lodash.groupby");
 const uniqBy = require("lodash.uniqby");
-const csvWriter = require("csv-writer");
 const { calculateTfIdfScores } = require("./utils/tf-idf.util");
-const { readCsv, readJson, writeJson } = require("./utils/io.util");
+const { readCsv, readJson, writeCsv, writeJson } = require("./utils/io.util");
 const {
   generateTokens,
   removeDuplicateTokens
@@ -15,15 +14,16 @@ const {
   sortChiSquareValueDescendingly
 } = require("./utils/chi-square.util");
 
-const DATASET_DIR = "./data/dataset-sample.csv";
-const JSON_SAVE_DIR = "./data/csv.json";
+const CSV_SAVE_PATH = "./data/feature-vectors.csv";
+const DATASET_PATH = "./data/dataset-sample.csv";
+const JSON_SAVE_PATH = "./data/csv.json";
 
 (async () => {
   const processBegin = Date.now();
 
   console.time("read-csv");
 
-  const csvDataFile = await readCsv(DATASET_DIR);
+  const csvDataFile = await readCsv(DATASET_PATH);
 
   console.log("done reading .csv");
   console.timeEnd("read-csv");
@@ -52,7 +52,7 @@ const JSON_SAVE_DIR = "./data/csv.json";
 
   console.time("saving-json");
 
-  writeJson(JSON_SAVE_DIR, csvDataFile);
+  writeJson(JSON_SAVE_PATH, csvDataFile);
 
   console.log("done saving .json");
   console.timeEnd("saving-json");
@@ -62,7 +62,7 @@ const JSON_SAVE_DIR = "./data/csv.json";
 
   console.time("creating-token-list");
 
-  const csvDataJson = readJson(JSON_SAVE_DIR);
+  const csvDataJson = readJson(JSON_SAVE_PATH);
   const tokenList = createTokenList(csvDataJson);
   const featureVectors = [];
 
@@ -145,6 +145,14 @@ const JSON_SAVE_DIR = "./data/csv.json";
 
   //////////////////////////////
 
+  console.time("save-tfidf-scores-as-csv");
+
+  writeCsv(CSV_SAVE_PATH, featureVectorsTfidf);
+
+  console.log("done saving tf-idf scores as .csv");
+  console.timeEnd("save-tfidf-scores-as-csv");
+  console.log("\n");
+
   const processEnd = Date.now();
 
   console.log(
@@ -152,13 +160,4 @@ const JSON_SAVE_DIR = "./data/csv.json";
     (processEnd - processBegin) / 1000,
     "seconds"
   );
-
-  const createCsvWriterObj = csvWriter.createArrayCsvWriter;
-  const csvWriteObj = createCsvWriterObj({
-    path: "./data/feature-vectors.csv"
-  });
-
-  csvWriteObj
-    .writeRecords(featureVectorsTfidf)
-    .then(() => console.log("done writing csv"));
 })();

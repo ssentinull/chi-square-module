@@ -9,7 +9,9 @@ const generateTokens = abstract => {
   const abstractDigitsRemoved = abstractLowercase.replace(/\d+/g, "");
   const abstractTokens = tokenizer.tokenize(abstractDigitsRemoved);
   const tokensStopwordRemoved = sw.removeStopwords(abstractTokens, sw.id);
-  const tokensStemmed = tokensStopwordRemoved.map(word => StemmerId.stem(word));
+  const tokensStemmed = tokensStopwordRemoved
+    .filter(word => word.length >= 2)
+    .map(word => StemmerId.stem(word));
 
   return tokensStemmed;
 };

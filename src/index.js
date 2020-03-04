@@ -9,21 +9,20 @@ const {
 const {
   calculateChiSquareValues,
   createTokenList,
-  mapAbstractFeatureVectors,
   sliceTopTermsFeatureVectors,
   sortChiSquareValueDescendingly
 } = require("./utils/chi-square.util");
 
 const CSV_SAVE_PATH = "./data/feature-vectors.csv";
 const DATASET_PATH = "./data/dataset-sample.csv";
-const JSON_SAVE_PATH = "./data/csv.json";
+const JSON_SAVE_PATH = "./data/journal-tokens.json";
 
 (async () => {
   const processBegin = Date.now();
 
   console.time("read-csv");
 
-  const csvDataFile = await readCsv(DATASET_PATH);
+  const csvData = await readCsv(DATASET_PATH);
 
   console.log("done reading .csv");
   console.timeEnd("read-csv");
@@ -33,7 +32,7 @@ const JSON_SAVE_PATH = "./data/csv.json";
 
   console.time("preprocessing-text");
 
-  for (const row of csvDataFile) {
+  for (const row of csvData) {
     const { ARTICLE_ABSTRACT } = row;
     const tokens = generateTokens(ARTICLE_ABSTRACT);
     const tokensDuplicateRemoved = removeDuplicateTokens(tokens);
@@ -52,7 +51,7 @@ const JSON_SAVE_PATH = "./data/csv.json";
 
   console.time("saving-json");
 
-  writeJson(JSON_SAVE_PATH, csvDataFile);
+  writeJson(JSON_SAVE_PATH, csvData);
 
   console.log("done saving .json");
   console.timeEnd("saving-json");
@@ -62,12 +61,12 @@ const JSON_SAVE_PATH = "./data/csv.json";
 
   console.time("creating-token-list");
 
-  const csvDataJson = readJson(JSON_SAVE_PATH);
-  const tokenList = createTokenList(csvDataJson);
+  const jsonData = readJson(JSON_SAVE_PATH);
+  const tokenList = createTokenList(jsonData);
   const featureVectors = [];
 
   for (const tokenListRow of tokenList) {
-    const chiSquareValues = calculateChiSquareValues(tokenListRow, csvDataJson);
+    const chiSquareValues = calculateChiSquareValues(tokenListRow, jsonData);
     const featureVector = { ...tokenListRow, ...chiSquareValues };
 
     featureVectors.push(featureVector);
@@ -136,7 +135,7 @@ const JSON_SAVE_PATH = "./data/csv.json";
 
   const featureVectorsTfidf = calculateTfIdfScores(
     uniqueTopMFeatureVectors,
-    csvDataJson
+    jsonData
   );
 
   console.log("done calculating tf-idf scores");

@@ -81,7 +81,7 @@ const JSON_SAVE_PATH = "./data/csv.json";
 
   console.time("grouping-feature-vectors");
 
-  const groupedFeatureVectors = groupBy(
+  const featureVectorsGroupedByJournalId = groupBy(
     featureVectors,
     item => item.JOURNAL_ID
   );
@@ -94,27 +94,23 @@ const JSON_SAVE_PATH = "./data/csv.json";
 
   console.time("append-abstract-to-feature-vectors");
 
-  const featureVectorsAbstractAppendedList = [];
+  const topMFeatureVectors = [];
 
-  for (const key in groupedFeatureVectors) {
-    const featureVectorsRow = groupedFeatureVectors[key];
-    const uniqueFeatureVectorsRow = uniqBy(
-      featureVectorsRow,
+  for (const key in featureVectorsGroupedByJournalId) {
+    const groupedFeatureVectors = featureVectorsGroupedByJournalId[key];
+    const uniqueFeatureVectors = uniqBy(
+      groupedFeatureVectors,
       item => item.TOKEN
     );
-    const sortedFeatureVectorsRow = sortChiSquareValueDescendingly(
-      uniqueFeatureVectorsRow
+    const sortedFeatureVectors = sortChiSquareValueDescendingly(
+      uniqueFeatureVectors
     );
-    const slicedFeatureVectorsRow = sliceTopTermsFeatureVectors(
-      sortedFeatureVectorsRow,
+    const topFeatureVectors = sliceTopTermsFeatureVectors(
+      sortedFeatureVectors,
       5
     );
-    const mappedFeatureVectorsRow = mapAbstractFeatureVectors(
-      slicedFeatureVectorsRow,
-      csvDataJson
-    );
 
-    featureVectorsAbstractAppendedList.push(...mappedFeatureVectorsRow);
+    topMFeatureVectors.push(...topFeatureVectors);
   }
 
   console.log("done appending abstract to feature vector");
@@ -125,8 +121,8 @@ const JSON_SAVE_PATH = "./data/csv.json";
 
   console.time("filtering-duplicate-feature-vectors");
 
-  const uniqueFeatureVectorList = uniqBy(
-    featureVectorsAbstractAppendedList,
+  const uniqueTopMFeatureVectors = uniqBy(
+    topMFeatureVectors,
     item => item.TOKEN
   );
 
@@ -139,7 +135,7 @@ const JSON_SAVE_PATH = "./data/csv.json";
   console.time("calculate-tfidf-score");
 
   const featureVectorsTfidf = calculateTfIdfScores(
-    uniqueFeatureVectorList,
+    uniqueTopMFeatureVectors,
     csvDataJson
   );
 

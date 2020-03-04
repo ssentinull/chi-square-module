@@ -98,12 +98,16 @@ const JSON_SAVE_PATH = "./data/csv.json";
 
   for (const key in groupedFeatureVectors) {
     const featureVectorsRow = groupedFeatureVectors[key];
+    const uniqueFeatureVectorsRow = uniqBy(
+      featureVectorsRow,
+      item => item.TOKEN
+    );
     const sortedFeatureVectorsRow = sortChiSquareValueDescendingly(
-      featureVectorsRow
+      uniqueFeatureVectorsRow
     );
     const slicedFeatureVectorsRow = sliceTopTermsFeatureVectors(
       sortedFeatureVectorsRow,
-      3
+      5
     );
     const mappedFeatureVectorsRow = mapAbstractFeatureVectors(
       slicedFeatureVectorsRow,

@@ -14,6 +14,7 @@ const {
 } = require("./utils/chi-square.util");
 
 const DATASET_PATH = "./data/dataset-sample.csv";
+const FEATURE_VECTORS_SAVE_PATH = "./data/feature-vectors.json";
 const JOURNAL_TOKENS_SAVE_PATH = "./data/journal-tokens.json";
 const TF_IDF_CALCULATIONS_SAVE_PATH = "./data/tf-idf-values.csv";
 
@@ -127,6 +128,18 @@ const TF_IDF_CALCULATIONS_SAVE_PATH = "./data/tf-idf-values.csv";
 
   console.log("done filtering duplicate feature vectors");
   console.timeEnd("filtering-duplicate-feature-vectors");
+  console.log("\n");
+
+  //////////////////////////////
+
+  console.time("saving-feature-vector-tokens-as-json");
+
+  const featureVectorsTokens = uniqueTopMFeatureVectors.map(item => item.TOKEN);
+
+  writeJson(FEATURE_VECTORS_SAVE_PATH, featureVectorsTokens);
+
+  console.log("done saving feature vector tokens as .json");
+  console.timeEnd("saving-feature-vector-tokens-as-json");
   console.log("\n");
 
   //////////////////////////////

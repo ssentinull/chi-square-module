@@ -16,7 +16,7 @@ const {
 const DATASET_PATH = "./data/dataset-sample.csv";
 const FEATURE_VECTORS_SAVE_PATH = "./data/feature-vectors.json";
 const JOURNAL_TOKENS_SAVE_PATH = "./data/journal-tokens.json";
-const TF_IDF_CALCULATIONS_SAVE_PATH = "./data/tf-idf-values.csv";
+const TF_IDF_SCORES_SAVE_PATH = "./data/tf-idf-scores.csv";
 
 (async () => {
   const processBegin = Date.now();
@@ -159,7 +159,7 @@ const TF_IDF_CALCULATIONS_SAVE_PATH = "./data/tf-idf-values.csv";
 
   console.time("save-tfidf-scores-as-csv");
 
-  writeCsv(TF_IDF_CALCULATIONS_SAVE_PATH, featureVectorsTfidfScores);
+  writeCsv(TF_IDF_SCORES_SAVE_PATH, featureVectorsTfidfScores);
 
   console.log("done saving tf-idf scores as .csv");
   console.timeEnd("save-tfidf-scores-as-csv");

@@ -174,3 +174,17 @@ const TF_IDF_CALCULATIONS_SAVE_PATH = "./data/tf-idf-values.csv";
     "seconds"
   );
 })();
+
+/***
+ * log large arrays & deep nested objects
+ *
+ * const util = require("util");
+ *
+ * console.log(
+ *  util.inspect(array, {
+ *    maxArrayLength: null,
+ *    showHidden: false,
+ *    depth: null
+ *  })
+ * );
+ * */

@@ -13,9 +13,9 @@ const {
   sortChiSquareValueDescendingly
 } = require("./utils/chi-square.util");
 
-const CSV_SAVE_PATH = "./data/feature-vectors.csv";
 const DATASET_PATH = "./data/dataset-sample.csv";
-const JSON_SAVE_PATH = "./data/journal-tokens.json";
+const JOURNAL_TOKENS_SAVE_PATH = "./data/journal-tokens.json";
+const TF_IDF_CALCULATIONS_SAVE_PATH = "./data/tf-idf-values.csv";
 
 (async () => {
   const processBegin = Date.now();
@@ -51,7 +51,7 @@ const JSON_SAVE_PATH = "./data/journal-tokens.json";
 
   console.time("saving-json");
 
-  writeJson(JSON_SAVE_PATH, csvData);
+  writeJson(JOURNAL_TOKENS_SAVE_PATH, csvData);
 
   console.log("done saving .json");
   console.timeEnd("saving-json");
@@ -61,7 +61,7 @@ const JSON_SAVE_PATH = "./data/journal-tokens.json";
 
   console.time("creating-token-list");
 
-  const jsonData = readJson(JSON_SAVE_PATH);
+  const jsonData = readJson(JOURNAL_TOKENS_SAVE_PATH);
   const tokenList = createTokenList(jsonData);
   const featureVectors = [];
 
@@ -91,7 +91,7 @@ const JSON_SAVE_PATH = "./data/journal-tokens.json";
 
   //////////////////////////////
 
-  console.time("append-abstract-to-feature-vectors");
+  console.time("pick-top-m-feature-vectors");
 
   const topMFeatureVectors = [];
 
@@ -112,8 +112,8 @@ const JSON_SAVE_PATH = "./data/journal-tokens.json";
     topMFeatureVectors.push(...topFeatureVectors);
   }
 
-  console.log("done appending abstract to feature vector");
-  console.timeEnd("append-abstract-to-feature-vectors");
+  console.log("done picking top M feature vectors");
+  console.timeEnd("pick-top-m-feature-vectors");
   console.log("\n");
 
   //////////////////////////////
@@ -133,7 +133,7 @@ const JSON_SAVE_PATH = "./data/journal-tokens.json";
 
   console.time("calculate-tfidf-score");
 
-  const featureVectorsTfidf = calculateTfIdfScores(
+  const featureVectorsTfidfScores = calculateTfIdfScores(
     uniqueTopMFeatureVectors,
     jsonData
   );
@@ -146,10 +146,11 @@ const JSON_SAVE_PATH = "./data/journal-tokens.json";
 
   console.time("save-tfidf-scores-as-csv");
 
-  writeCsv(CSV_SAVE_PATH, featureVectorsTfidf);
+  writeCsv(TF_IDF_CALCULATIONS_SAVE_PATH, featureVectorsTfidfScores);
 
   console.log("done saving tf-idf scores as .csv");
   console.timeEnd("save-tfidf-scores-as-csv");
+
   console.log("\n");
 
   const processEnd = Date.now();

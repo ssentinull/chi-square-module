@@ -13,10 +13,10 @@ const {
   sortChiSquareValueDescendingly
 } = require("./utils/chi-square.util");
 
-const DATASET_PATH = "./data/dataset-sample.csv";
-const FEATURE_VECTORS_SAVE_PATH = "./data/feature-vectors.json";
-const JOURNAL_TOKENS_SAVE_PATH = "./data/journal-tokens.json";
-const TF_IDF_SCORES_SAVE_PATH = "./data/tf-idf-scores.csv";
+const DATASET_PATH = "./data/input/dataset-sample.csv";
+const DATASET_JSON_SAVE_PATH = "./data/output/dataset-sample.json";
+const FEATURE_VECTOR_TOKENS_SAVE_PATH = "./data/output/fv-tokens.json";
+const TF_IDF_SCORES_SAVE_PATH = "./data/output/fv-tf-idf-scores.csv";
 
 (async () => {
   const processBegin = Date.now();
@@ -52,7 +52,7 @@ const TF_IDF_SCORES_SAVE_PATH = "./data/tf-idf-scores.csv";
 
   console.time("saving-json");
 
-  writeJson(JOURNAL_TOKENS_SAVE_PATH, csvData);
+  writeJson(DATASET_JSON_SAVE_PATH, csvData);
 
   console.log("done saving .json");
   console.timeEnd("saving-json");
@@ -62,7 +62,7 @@ const TF_IDF_SCORES_SAVE_PATH = "./data/tf-idf-scores.csv";
 
   console.time("creating-token-list");
 
-  const jsonData = readJson(JOURNAL_TOKENS_SAVE_PATH);
+  const jsonData = readJson(DATASET_JSON_SAVE_PATH);
   const tokenList = createTokenList(jsonData);
   const featureVectors = [];
 
@@ -136,7 +136,7 @@ const TF_IDF_SCORES_SAVE_PATH = "./data/tf-idf-scores.csv";
 
   const featureVectorsTokens = uniqueTopMFeatureVectors.map(item => item.TOKEN);
 
-  writeJson(FEATURE_VECTORS_SAVE_PATH, featureVectorsTokens);
+  writeJson(FEATURE_VECTOR_TOKENS_SAVE_PATH, featureVectorsTokens);
 
   console.log("done saving feature vector tokens as .json");
   console.timeEnd("saving-feature-vector-tokens-as-json");

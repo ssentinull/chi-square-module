@@ -64,10 +64,20 @@ const createTokenList = jsonData => {
   const tokenList = [];
 
   for (const jsonDataRow of jsonData) {
-    const { JOURNAL_ID, ARTICLE_ID, TOKENS_DUPLICATE_REMOVED } = jsonDataRow;
+    const {
+      JOURNAL_ID,
+      JOURNAL_TITLE,
+      ARTICLE_ID,
+      TOKENS_DUPLICATE_REMOVED
+    } = jsonDataRow;
 
     for (const token of TOKENS_DUPLICATE_REMOVED) {
-      const tokenListObj = { JOURNAL_ID, ARTICLE_ID, TOKEN: token };
+      const tokenListObj = {
+        JOURNAL_ID,
+        JOURNAL_TITLE,
+        ARTICLE_ID,
+        TOKEN: token
+      };
 
       tokenList.push(tokenListObj);
     }

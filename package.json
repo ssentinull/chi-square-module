@@ -25,6 +25,7 @@
   "dependencies": {
     "csv-writer": "^1.6.0",
     "lodash.groupby": "^4.6.0",
+    "lodash.mapvalues": "^4.6.0",
     "lodash.uniqby": "^4.7.0",
     "lower-case": "^2.0.1",
     "natural": "^0.6.3",

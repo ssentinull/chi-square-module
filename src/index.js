@@ -1,4 +1,5 @@
 const groupBy = require("lodash.groupby");
+const mapValues = require("lodash.mapvalues");
 const uniqBy = require("lodash.uniqby");
 const { calculateTfIdfScores } = require("./utils/tf-idf.util");
 const { readCsv, readJson, writeCsv, writeJson } = require("./utils/io.util");
@@ -21,42 +22,42 @@ const TF_IDF_SCORES_SAVE_PATH = "./data/output/fv-tf-idf-scores.csv";
 (async () => {
   const processBegin = Date.now();
 
-  console.time("read-csv");
+  // console.time("read-csv");
 
-  const csvData = await readCsv(DATASET_PATH);
+  // const csvData = await readCsv(DATASET_PATH);
 
-  console.log("done reading .csv");
-  console.timeEnd("read-csv");
-  console.log("\n");
+  // console.log("done reading .csv");
+  // console.timeEnd("read-csv");
+  // console.log("\n");
 
-  //////////////////////////////
+  // //////////////////////////////
 
-  console.time("preprocessing-text");
+  // console.time("preprocessing-text");
 
-  for (const row of csvData) {
-    const { ARTICLE_ABSTRACT } = row;
-    const tokens = generateTokens(ARTICLE_ABSTRACT);
-    const tokensDuplicateRemoved = removeDuplicateTokens(tokens);
+  // for (const row of csvData) {
+  //   const { ARTICLE_ABSTRACT } = row;
+  //   const tokens = generateTokens(ARTICLE_ABSTRACT);
+  //   const tokensDuplicateRemoved = removeDuplicateTokens(tokens);
 
-    [row.TOKENS, row.TOKENS_DUPLICATE_REMOVED] = [
-      tokens,
-      tokensDuplicateRemoved
-    ];
-  }
+  //   [row.TOKENS, row.TOKENS_DUPLICATE_REMOVED] = [
+  //     tokens,
+  //     tokensDuplicateRemoved
+  //   ];
+  // }
 
-  console.log("done preprocessing .csv text");
-  console.timeEnd("preprocessing-text");
-  console.log("\n");
+  // console.log("done preprocessing .csv text");
+  // console.timeEnd("preprocessing-text");
+  // console.log("\n");
 
-  //////////////////////////////
+  // //////////////////////////////
 
-  console.time("saving-json");
+  // console.time("saving-json");
 
-  writeJson(DATASET_JSON_SAVE_PATH, csvData);
+  // writeJson(DATASET_JSON_SAVE_PATH, csvData);
 
-  console.log("done saving .json");
-  console.timeEnd("saving-json");
-  console.log("\n");
+  // console.log("done saving .json");
+  // console.timeEnd("saving-json");
+  // console.log("\n");
 
   //////////////////////////////
 
@@ -98,16 +99,13 @@ const TF_IDF_SCORES_SAVE_PATH = "./data/output/fv-tf-idf-scores.csv";
 
   for (const key in featureVectorsGroupedByJournalId) {
     const groupedFeatureVectors = featureVectorsGroupedByJournalId[key];
-    const uniqueFeatureVectors = uniqBy(
-      groupedFeatureVectors,
-      item => item.TOKEN
-    );
+    const uniqueFeatureVectors = uniqBy(groupedFeatureVectors, fv => fv.TOKEN);
     const sortedFeatureVectors = sortChiSquareValueDescendingly(
       uniqueFeatureVectors
     );
     const topFeatureVectors = sliceTopTermsFeatureVectors(
       sortedFeatureVectors,
-      5
+      100
     );
 
     topMFeatureVectors.push(...topFeatureVectors);
@@ -121,10 +119,7 @@ const TF_IDF_SCORES_SAVE_PATH = "./data/output/fv-tf-idf-scores.csv";
 
   console.time("filtering-duplicate-feature-vectors");
 
-  const uniqueTopMFeatureVectors = uniqBy(
-    topMFeatureVectors,
-    item => item.TOKEN
-  );
+  const uniqueTopMFeatureVectors = uniqBy(topMFeatureVectors, fv => fv.TOKEN);
 
   console.log("done filtering duplicate feature vectors");
   console.timeEnd("filtering-duplicate-feature-vectors");
@@ -134,7 +129,10 @@ const TF_IDF_SCORES_SAVE_PATH = "./data/output/fv-tf-idf-scores.csv";
 
   console.time("saving-feature-vector-tokens-as-json");
 
-  const featureVectorsTokens = uniqueTopMFeatureVectors.map(item => item.TOKEN);
+  const featureVectorsTokens = mapValues(
+    groupBy(uniqueTopMFeatureVectors, "JOURNAL_TITLE"),
+    fvGroupedByTitle => fvGroupedByTitle.map(fv => fv.TOKEN)
+  );
 
   writeJson(FEATURE_VECTOR_TOKENS_SAVE_PATH, featureVectorsTokens);
 

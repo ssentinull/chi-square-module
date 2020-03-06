@@ -22,42 +22,42 @@ const TF_IDF_SCORES_SAVE_PATH = "./data/output/fv-tf-idf-scores.csv";
 (async () => {
   const processBegin = Date.now();
 
-  // console.time("read-csv");
+  console.time("read-csv");
 
-  // const csvData = await readCsv(DATASET_PATH);
+  const csvData = await readCsv(DATASET_PATH);
 
-  // console.log("done reading .csv");
-  // console.timeEnd("read-csv");
-  // console.log("\n");
+  console.log("done reading .csv");
+  console.timeEnd("read-csv");
+  console.log("\n");
 
-  // //////////////////////////////
+  //////////////////////////////
 
-  // console.time("preprocessing-text");
+  console.time("preprocessing-text");
 
-  // for (const row of csvData) {
-  //   const { ARTICLE_ABSTRACT } = row;
-  //   const tokens = generateTokens(ARTICLE_ABSTRACT);
-  //   const tokensDuplicateRemoved = removeDuplicateTokens(tokens);
+  for (const row of csvData) {
+    const { ARTICLE_ABSTRACT } = row;
+    const tokens = generateTokens(ARTICLE_ABSTRACT);
+    const tokensDuplicateRemoved = removeDuplicateTokens(tokens);
 
-  //   [row.TOKENS, row.TOKENS_DUPLICATE_REMOVED] = [
-  //     tokens,
-  //     tokensDuplicateRemoved
-  //   ];
-  // }
+    [row.TOKENS, row.TOKENS_DUPLICATE_REMOVED] = [
+      tokens,
+      tokensDuplicateRemoved
+    ];
+  }
 
-  // console.log("done preprocessing .csv text");
-  // console.timeEnd("preprocessing-text");
-  // console.log("\n");
+  console.log("done preprocessing .csv text");
+  console.timeEnd("preprocessing-text");
+  console.log("\n");
 
-  // //////////////////////////////
+  //////////////////////////////
 
-  // console.time("saving-json");
+  console.time("saving-json");
 
-  // writeJson(DATASET_JSON_SAVE_PATH, csvData);
+  writeJson(DATASET_JSON_SAVE_PATH, csvData);
 
-  // console.log("done saving .json");
-  // console.timeEnd("saving-json");
-  // console.log("\n");
+  console.log("done saving .json");
+  console.timeEnd("saving-json");
+  console.log("\n");
 
   //////////////////////////////
 

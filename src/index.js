@@ -105,7 +105,7 @@ const TF_IDF_SCORES_SAVE_PATH = "./data/output/fv-tf-idf-scores.csv";
     );
     const topFeatureVectors = sliceTopTermsFeatureVectors(
       sortedFeatureVectors,
-      100
+      200
     );
 
     topMFeatureVectors.push(...topFeatureVectors);
@@ -168,8 +168,8 @@ const TF_IDF_SCORES_SAVE_PATH = "./data/output/fv-tf-idf-scores.csv";
 
   console.log(
     "total execution time :",
-    (processEnd - processBegin) / 1000,
-    "seconds"
+    (processEnd - processBegin) / 60000,
+    "minutes"
   );
 })();
 

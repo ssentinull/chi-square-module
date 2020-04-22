@@ -17,6 +17,8 @@ const {
 const DATASET_PATH = "./data/input/dataset-sample.csv";
 const DATASET_JSON_SAVE_PATH = "./data/output/dataset-sample.json";
 const FEATURE_VECTOR_TOKENS_SAVE_PATH = "./data/output/fv-tokens.json";
+const FEATURE_VECTOR_TOKENS_BY_JOURNAL_SAVE_PATH =
+  "./data/output/fv-tokens-by-journal.json";
 const TF_IDF_SCORES_SAVE_PATH = "./data/output/fv-tf-idf-scores.csv";
 
 (async () => {
@@ -138,12 +140,20 @@ const TF_IDF_SCORES_SAVE_PATH = "./data/output/fv-tf-idf-scores.csv";
 
   console.time("saving-feature-vector-tokens-as-json");
 
-  const featureVectorsTokens = mapValues(
+  const featureVectorsTokens = uniqueTopMFeatureVectors.map(
+    (featureVector) => featureVector.TOKEN
+  );
+
+  const featureVectorsTokensByJournal = mapValues(
     groupBy(uniqueTopMFeatureVectors, "JOURNAL_TITLE"),
     (fvGroupedByTitle) => fvGroupedByTitle.map((fv) => fv.TOKEN)
   );
 
   writeJson(FEATURE_VECTOR_TOKENS_SAVE_PATH, featureVectorsTokens);
+  writeJson(
+    FEATURE_VECTOR_TOKENS_BY_JOURNAL_SAVE_PATH,
+    featureVectorsTokensByJournal
+  );
 
   console.log("done saving feature vector tokens as .json");
   console.timeEnd("saving-feature-vector-tokens-as-json");

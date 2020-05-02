@@ -1,13 +1,13 @@
 const groupBy = require("lodash.groupby");
 const mapValues = require("lodash.mapvalues");
 const uniqBy = require("lodash.uniqby");
-const { readJson, writeJson } = require("./utils/io.util");
+const { readJson, writeJson } = require("../utils/io.util");
 const {
   calculateChiSquareValues,
   createTokenList,
   sliceTopTermsFeatureVectors,
   sortChiSquareValueDescendingly,
-} = require("./utils/chi-square.util");
+} = require("../utils/chi-square.util");
 
 const DATASET_JSON_SAVE_PATH = "./data/output/dataset-sample.json";
 const FEATURE_VECTOR_50_TOKENS_SAVE_PATH =
@@ -23,9 +23,7 @@ const FEATURE_VECTOR_200_TOKENS_SAVE_PATH =
 const FEATURE_VECTOR_200_TOKENS_BY_JOURNAL_SAVE_PATH =
   "./data/output/fv-tokens-by-journal/fv-tokens-by-journal-200.json";
 
-((async) => {
-  const processBegin = Date.now();
-
+const featureVectorsGenerator = async () => {
   console.time("creating-feature-vectors");
 
   const jsonData = readJson(DATASET_JSON_SAVE_PATH);
@@ -174,11 +172,13 @@ const FEATURE_VECTOR_200_TOKENS_BY_JOURNAL_SAVE_PATH =
   console.log("done saving feature vector tokens as .json");
   console.timeEnd("saving-feature-vector-tokens-as-json");
   console.log("\n");
-  const processEnd = Date.now();
 
-  console.log(
-    "total execution time :",
-    (processEnd - processBegin) / 60000,
-    "minutes"
-  );
-})();
+  return {
+    JSON_DATA: jsonData,
+    TOP_50_FEATURE_VECTORS: uniqueTop50MFeatureVectors,
+    TOP_100_FEATURE_VECTORS: uniqueTop100MFeatureVectors,
+    TOP_200_FEATURE_VECTORS: uniqueTop200MFeatureVectors,
+  };
+};
+
+module.exports = { featureVectorsGenerator };

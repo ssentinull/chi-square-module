@@ -1,170 +1,49 @@
-const groupBy = require("lodash.groupby");
-const mapValues = require("lodash.mapvalues");
-const uniqBy = require("lodash.uniqby");
 const { calculateTfIdfScores } = require("./utils/tf-idf.util");
-const { readCsv, readJson, writeCsv, writeJson } = require("./utils/io.util");
+const { writeCsv } = require("./utils/io.util");
+const { tokensGenerator } = require("./modules/tokensGenerator");
 const {
-  generateTokens,
-  removeDuplicateTokens,
-} = require("./utils/text-normalization.util");
-const {
-  calculateChiSquareValues,
-  createTokenList,
-  sliceTopTermsFeatureVectors,
-  sortChiSquareValueDescendingly,
-} = require("./utils/chi-square.util");
+  featureVectorsGenerator,
+} = require("./modules/featureVectrosGenerator");
 
-const DATASET_PATH = "./data/input/dataset-sample.csv";
-const DATASET_JSON_SAVE_PATH = "./data/output/dataset-sample.json";
-const FEATURE_VECTOR_TOKENS_SAVE_PATH = "./data/output/fv-tokens.json";
-const FEATURE_VECTOR_TOKENS_BY_JOURNAL_SAVE_PATH =
-  "./data/output/fv-tokens-by-journal.json";
-const TF_IDF_SCORES_SAVE_PATH = "./data/output/fv-tf-idf-scores.csv";
+("./data/output/fv-tokens-by-journal.json");
+const TF_IDF_SCORES_200_SAVE_PATH =
+  "./data/output/tf-idf/fv-tf-idf-scores-200.csv";
+const TF_IDF_SCORES_100_SAVE_PATH =
+  "./data/output/tf-idf/fv-tf-idf-scores-100.csv";
+const TF_IDF_SCORES_50_SAVE_PATH =
+  "./data/output/tf-idf/fv-tf-idf-scores-50.csv";
 
 (async () => {
   const processBegin = Date.now();
 
-  console.time("read-csv");
-
-  const csvData = await readCsv(DATASET_PATH);
-
-  console.log("done reading .csv");
-  console.timeEnd("read-csv");
-  console.log("\n");
+  await tokensGenerator();
 
   //////////////////////////////
 
-  console.time("preprocessing-text");
+  const featureVectorsGeneratorResult = await featureVectorsGenerator();
 
-  for (const row of csvData) {
-    const { ARTICLE_ABSTRACT } = row;
-    const tokens = generateTokens(ARTICLE_ABSTRACT);
-    const tokensDuplicateRemoved = removeDuplicateTokens(tokens);
-
-    [row.TOKENS, row.TOKENS_DUPLICATE_REMOVED] = [
-      tokens,
-      tokensDuplicateRemoved,
-    ];
-  }
-
-  console.log("done preprocessing .csv text");
-  console.timeEnd("preprocessing-text");
-  console.log("\n");
-
-  //////////////////////////////
-
-  console.time("saving-json");
-
-  writeJson(DATASET_JSON_SAVE_PATH, csvData);
-
-  console.log("done saving .json");
-  console.timeEnd("saving-json");
-  console.log("\n");
-
-  //////////////////////////////
-
-  console.time("creating-feature-vectors");
-
-  const jsonData = readJson(DATASET_JSON_SAVE_PATH);
-
-  console.log("done reading json data");
-
-  const tokenList = createTokenList(jsonData);
-
-  console.log("done creating token list");
-
-  const featureVectors = [];
-
-  for (const tokenListRow of tokenList) {
-    const chiSquareValues = calculateChiSquareValues(tokenListRow, jsonData);
-    const featureVector = { ...tokenListRow, ...chiSquareValues };
-
-    featureVectors.push(featureVector);
-  }
-
-  console.log("done creating feature vectors");
-  console.timeEnd("creating-feature-vectors");
-  console.log("\n");
-
-  //////////////////////////////
-
-  console.time("grouping-feature-vectors");
-
-  const featureVectorsGroupedByJournalId = groupBy(
-    featureVectors,
-    (item) => item.JOURNAL_ID
-  );
-
-  console.log("done grouping feature vectors");
-  console.timeEnd("grouping-feature-vectors");
-  console.log("\n");
-
-  //////////////////////////////
-
-  console.time("pick-top-m-feature-vectors");
-
-  const topMFeatureVectors = [];
-
-  for (const key in featureVectorsGroupedByJournalId) {
-    const groupedFeatureVectors = featureVectorsGroupedByJournalId[key];
-    const uniqueFeatureVectors = uniqBy(
-      groupedFeatureVectors,
-      (fv) => fv.TOKEN
-    );
-    const sortedFeatureVectors = sortChiSquareValueDescendingly(
-      uniqueFeatureVectors
-    );
-    const topFeatureVectors = sliceTopTermsFeatureVectors(
-      sortedFeatureVectors,
-      200
-    );
-
-    topMFeatureVectors.push(...topFeatureVectors);
-  }
-
-  console.log("done picking top M feature vectors");
-  console.timeEnd("pick-top-m-feature-vectors");
-  console.log("\n");
-
-  //////////////////////////////
-
-  console.time("filtering-duplicate-feature-vectors");
-
-  const uniqueTopMFeatureVectors = uniqBy(topMFeatureVectors, (fv) => fv.TOKEN);
-
-  console.log("done filtering duplicate feature vectors");
-  console.timeEnd("filtering-duplicate-feature-vectors");
-  console.log("\n");
-
-  //////////////////////////////
-
-  console.time("saving-feature-vector-tokens-as-json");
-
-  const featureVectorsTokens = uniqueTopMFeatureVectors.map(
-    (featureVector) => featureVector.TOKEN
-  );
-
-  const featureVectorsTokensByJournal = mapValues(
-    groupBy(uniqueTopMFeatureVectors, "JOURNAL_TITLE"),
-    (fvGroupedByTitle) => fvGroupedByTitle.map((fv) => fv.TOKEN)
-  );
-
-  writeJson(FEATURE_VECTOR_TOKENS_SAVE_PATH, featureVectorsTokens);
-  writeJson(
-    FEATURE_VECTOR_TOKENS_BY_JOURNAL_SAVE_PATH,
-    featureVectorsTokensByJournal
-  );
-
-  console.log("done saving feature vector tokens as .json");
-  console.timeEnd("saving-feature-vector-tokens-as-json");
-  console.log("\n");
+  const {
+    JSON_DATA: jsonData,
+    TOP_50_FEATURE_VECTORS: uniqueTop50MFeatureVectors,
+    TOP_100_FEATURE_VECTORS: uniqueTop100MFeatureVectors,
+    TOP_200_FEATURE_VECTORS: uniqueTop200MFeatureVectors,
+  } = featureVectorsGeneratorResult;
 
   //////////////////////////////
 
   console.time("calculate-tfidf-score");
 
-  const featureVectorsTfidfScores = calculateTfIdfScores(
-    uniqueTopMFeatureVectors,
+  const featureVectorsTop200MTfidfScores = calculateTfIdfScores(
+    uniqueTop200MFeatureVectors,
+    jsonData
+  );
+
+  const featureVectorsTop100MTfidfScores = calculateTfIdfScores(
+    uniqueTop100MFeatureVectors,
+    jsonData
+  );
+  const featureVectorsTop50MTfidfScores = calculateTfIdfScores(
+    uniqueTop50MFeatureVectors,
     jsonData
   );
 
@@ -176,7 +55,9 @@ const TF_IDF_SCORES_SAVE_PATH = "./data/output/fv-tf-idf-scores.csv";
 
   console.time("save-tfidf-scores-as-csv");
 
-  writeCsv(TF_IDF_SCORES_SAVE_PATH, featureVectorsTfidfScores);
+  writeCsv(TF_IDF_SCORES_200_SAVE_PATH, featureVectorsTop200MTfidfScores);
+  writeCsv(TF_IDF_SCORES_100_SAVE_PATH, featureVectorsTop100MTfidfScores);
+  writeCsv(TF_IDF_SCORES_50_SAVE_PATH, featureVectorsTop50MTfidfScores);
 
   console.log("done saving tf-idf scores as .csv");
   console.timeEnd("save-tfidf-scores-as-csv");

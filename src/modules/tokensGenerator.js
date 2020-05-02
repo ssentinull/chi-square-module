@@ -1,6 +1,6 @@
 const {
   generateTokens,
-  removeDuplicateTokens
+  removeDuplicateTokens,
 } = require("./utils/text-normalization.util");
 const { readCsv, writeJson } = require("./utils/io.util");
 const fs = require("fs");
@@ -8,9 +8,7 @@ const fs = require("fs");
 const DATASET_PATH = "./data/input/dataset-sample.csv";
 const DATASET_JSON_SAVE_PATH = "./data/output/dataset-sample.json";
 
-(async () => {
-  const processBegin = Date.now();
-
+const tokensGenerator = async () => {
   console.time("read-csv");
 
   const csvData = await readCsv(DATASET_PATH);
@@ -30,7 +28,7 @@ const DATASET_JSON_SAVE_PATH = "./data/output/dataset-sample.json";
 
     [row.TOKENS, row.TOKENS_DUPLICATE_REMOVED] = [
       tokens,
-      tokensDuplicateRemoved
+      tokensDuplicateRemoved,
     ];
   }
 
@@ -54,14 +52,6 @@ const DATASET_JSON_SAVE_PATH = "./data/output/dataset-sample.json";
   console.log("done saving .json");
   console.timeEnd("saving-json");
   console.log("\n");
+};
 
-  //////////////////////////////
-
-  const processEnd = Date.now();
-
-  console.log(
-    "total execution time :",
-    (processEnd - processBegin) / 60000,
-    "minutes"
-  );
-})();
+module.exports = { tokensGenerator };

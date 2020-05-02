@@ -1,8 +1,8 @@
 const {
   generateTokens,
   removeDuplicateTokens,
-} = require("./utils/text-normalization.util");
-const { readCsv, writeJson } = require("./utils/io.util");
+} = require("../utils/text-normalization.util");
+const { readCsv, writeJson } = require("../utils/io.util");
 const fs = require("fs");
 
 const DATASET_PATH = "./data/input/dataset-sample.csv";

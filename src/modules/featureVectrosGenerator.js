@@ -22,6 +22,10 @@ const FEATURE_VECTOR_200_TOKENS_SAVE_PATH =
   "./data/output/fv-tokens/fv-tokens-200.json";
 const FEATURE_VECTOR_200_TOKENS_BY_JOURNAL_SAVE_PATH =
   "./data/output/fv-tokens-by-journal/fv-tokens-by-journal-200.json";
+const FEATURE_VECTOR_500_TOKENS_SAVE_PATH =
+  "./data/output/fv-tokens/fv-tokens-500.json";
+const FEATURE_VECTOR_500_TOKENS_BY_JOURNAL_SAVE_PATH =
+  "./data/output/fv-tokens-by-journal/fv-tokens-by-journal-500.json";
 
 const featureVectorsGenerator = async () => {
   console.time("creating-feature-vectors");
@@ -74,6 +78,7 @@ const featureVectorsGenerator = async () => {
   const top50MFeatureVectors = [];
   const top100MFeatureVectors = [];
   const top200MFeatureVectors = [];
+  const top500MFeatureVectors = [];
 
   for (const key in featureVectorsGroupedByJournalId) {
     const groupedFeatureVectors = featureVectorsGroupedByJournalId[key];
@@ -96,10 +101,15 @@ const featureVectorsGenerator = async () => {
       sortedFeatureVectors,
       200
     );
+    const top500FeatureVectors = sliceTopTermsFeatureVectors(
+      sortedFeatureVectors,
+      500
+    );
 
     top50MFeatureVectors.push(...top50FeatureVectors);
     top100MFeatureVectors.push(...top100FeatureVectors);
     top200MFeatureVectors.push(...top200FeatureVectors);
+    top500MFeatureVectors.push(...top500FeatureVectors);
   }
 
   console.log("done picking top M feature vectors");
@@ -120,6 +130,10 @@ const featureVectorsGenerator = async () => {
   );
   const uniqueTop200MFeatureVectors = uniqBy(
     top200MFeatureVectors,
+    (fv) => fv.TOKEN
+  );
+  const uniqueTop500MFeatureVectors = uniqBy(
+    top500MFeatureVectors,
     (fv) => fv.TOKEN
   );
 
@@ -143,6 +157,10 @@ const featureVectorsGenerator = async () => {
     (featureVector) => featureVector.TOKEN
   );
 
+  const featureVectors500Tokens = uniqueTop500MFeatureVectors.map(
+    (featureVector) => featureVector.TOKEN
+  );
+
   const featureVectors50TokensByJournal = mapValues(
     groupBy(uniqueTop50MFeatureVectors, "JOURNAL_TITLE"),
     (fvGroupedByTitle) => fvGroupedByTitle.map((fv) => fv.TOKEN)
@@ -155,6 +173,11 @@ const featureVectorsGenerator = async () => {
 
   const featureVectors200TokensByJournal = mapValues(
     groupBy(uniqueTop200MFeatureVectors, "JOURNAL_TITLE"),
+    (fvGroupedByTitle) => fvGroupedByTitle.map((fv) => fv.TOKEN)
+  );
+
+  const featureVectors500TokensByJournal = mapValues(
+    groupBy(uniqueTop500MFeatureVectors, "JOURNAL_TITLE"),
     (fvGroupedByTitle) => fvGroupedByTitle.map((fv) => fv.TOKEN)
   );
 
@@ -176,6 +199,12 @@ const featureVectorsGenerator = async () => {
     featureVectors200TokensByJournal
   );
 
+  writeJson(FEATURE_VECTOR_500_TOKENS_SAVE_PATH, featureVectors500Tokens);
+  writeJson(
+    FEATURE_VECTOR_500_TOKENS_BY_JOURNAL_SAVE_PATH,
+    featureVectors500TokensByJournal
+  );
+
   console.log("done saving feature vector tokens as .json");
   console.timeEnd("saving-feature-vector-tokens-as-json");
   console.log("\n");
@@ -185,6 +214,7 @@ const featureVectorsGenerator = async () => {
     TOP_50_FEATURE_VECTORS: uniqueTop50MFeatureVectors,
     TOP_100_FEATURE_VECTORS: uniqueTop100MFeatureVectors,
     TOP_200_FEATURE_VECTORS: uniqueTop200MFeatureVectors,
+    TOP_500_FEATURE_VECTORS: uniqueTop500MFeatureVectors,
   };
 };
 

@@ -36,11 +36,18 @@ const featureVectorsGenerator = async () => {
 
   const featureVectors = [];
 
+  let tokenListProcessNum = 0;
+
   for (const tokenListRow of tokenList) {
     const chiSquareValues = calculateChiSquareValues(tokenListRow, jsonData);
     const featureVector = { ...tokenListRow, ...chiSquareValues };
 
     featureVectors.push(featureVector);
+
+    if (tokenListProcessNum % 10000 == 0)
+      console.log("tokenListProcessNum: ", tokenListProcessNum);
+
+    tokenListProcessNum++;
   }
 
   console.log("done creating feature vectors");

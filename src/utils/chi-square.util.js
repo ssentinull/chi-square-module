@@ -5,14 +5,14 @@ const calculateChiSquareValues = (tokenListRow, jsonData) => {
   // go over every single tokens that's been spread out
   const {
     JOURNAL_ID: JOURNAL_ID_TOKEN_LIST,
-    TOKEN: TOKEN_TOKEN_LIST
+    TOKEN: TOKEN_TOKEN_LIST,
   } = tokenListRow;
 
   // check for the existance of the tokens in each articles
   for (const jsonDataRow of jsonData) {
     const {
       JOURNAL_ID: JOURNAL_ID_JSON_DATA,
-      TOKENS_DUPLICATE_REMOVED: TOKEN_JSON_DATA
+      TOKENS_DUPLICATE_REMOVED: TOKEN_JSON_DATA,
     } = jsonDataRow;
 
     if (
@@ -53,44 +53,49 @@ const calculateChiSquareValues = (tokenListRow, jsonData) => {
     B_VALUE: bValue,
     C_VALUE: cValue,
     D_VALUE: dValue,
-    CHI_SQUARE: chiSquare
+    CHI_SQUARE: chiSquare,
   };
 
   return chiSquareValues;
 };
 
 // spread the tokens of the articles into a single layer array of objects
-const createTokenList = jsonData => {
+const createTokenList = (jsonData) => {
   const tokenList = [];
+  let tokenAmount = 0;
 
   for (const jsonDataRow of jsonData) {
     const {
       JOURNAL_ID,
       JOURNAL_TITLE,
       ARTICLE_ID,
-      TOKENS_DUPLICATE_REMOVED
+      TOKENS_DUPLICATE_REMOVED,
     } = jsonDataRow;
+
+    tokenAmount += TOKENS_DUPLICATE_REMOVED.length;
 
     for (const token of TOKENS_DUPLICATE_REMOVED) {
       const tokenListObj = {
         JOURNAL_ID,
         JOURNAL_TITLE,
         ARTICLE_ID,
-        TOKEN: token
+        TOKEN: token,
       };
 
       tokenList.push(tokenListObj);
     }
   }
 
+  console.log("tokenAmount: ", tokenAmount);
+
   return tokenList;
 };
 
 const mapAbstractFeatureVectors = (list, jsonData) =>
-  list.map(item => {
+  list.map((item) => {
     const { JOURNAL_ID, ARTICLE_ID } = item;
     const { ARTICLE_ABSTRACT } = jsonData.find(
-      item => item.JOURNAL_ID === JOURNAL_ID && item.ARTICLE_ID === ARTICLE_ID
+      (item) => item.JOURNAL_ID === JOURNAL_ID && item.ARTICLE_ID === ARTICLE_ID
     );
 
     item.ARTICLE_ABSTRACT = ARTICLE_ABSTRACT;
@@ -99,7 +104,7 @@ const mapAbstractFeatureVectors = (list, jsonData) =>
 
 const sliceTopTermsFeatureVectors = (list, mTerms) => list.slice(0, mTerms);
 
-const sortChiSquareValueDescendingly = list =>
+const sortChiSquareValueDescendingly = (list) =>
   list.sort((a, b) => b.CHI_SQUARE - a.CHI_SQUARE);
 
 module.exports = {
@@ -107,5 +112,5 @@ module.exports = {
   createTokenList,
   mapAbstractFeatureVectors,
   sliceTopTermsFeatureVectors,
-  sortChiSquareValueDescendingly
+  sortChiSquareValueDescendingly,
 };

@@ -10,12 +10,9 @@ const OUTPUT_PATH = "./src/utils/tokens-to-regex.json";
   for (const jsonData of jsonDatas) {
     const { TOKENS_DUPLICATE_REMOVED: tokens } = jsonData;
 
-    for (const token of tokens) {
+    for (const token of tokens)
       if (!(token in regexTokens)) regexTokens[token] = token;
-    }
   }
-
-  console.log("iran");
 
   writeJson(OUTPUT_PATH, regexTokens);
 })();

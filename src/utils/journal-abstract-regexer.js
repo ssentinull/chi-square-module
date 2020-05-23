@@ -21,8 +21,9 @@ const TOKENS_REGEX_DATA = "./src/utils/tokens-to-regex.json";
       ARTICLE_ABSTRACT,
     } = csvData;
 
-    regexedAbstract = ARTICLE_ABSTRACT.replace(re, function (matched) {
-      return mapObj[matched];
+    regexedAbstract = ARTICLE_ABSTRACT.replace(re, (matched) => {
+      if (mapObj[matched]) return mapObj[matched];
+      return matched;
     });
 
     newCsvData = [

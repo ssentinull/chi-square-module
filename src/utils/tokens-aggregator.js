@@ -10,7 +10,8 @@ const OUTPUT_PATH = "./src/utils/tokens-to-regex.json";
   for (const jsonData of jsonDatas) {
     const { TOKENS_DUPLICATE_REMOVED: tokens } = jsonData;
 
-    for (const token of tokens) regexTokens[token] = token;
+    for (const token of tokens)
+      if (token.length >= 6) regexTokens[token] = token;
   }
 
   writeJson(OUTPUT_PATH, regexTokens);

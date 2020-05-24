@@ -21,7 +21,16 @@ const tokensGenerator = async () => {
 
   console.time("preprocessing-text");
 
+  const totalAbstractCount = csvData.length;
+
+  console.log("total abstract: ", totalAbstractCount);
+
+  var currentAbstractCount = 0;
+
   for (const row of csvData) {
+    if (currentAbstractCount % 500 == 0)
+      console.log("processing abstract: ", currentAbstractCount);
+
     const { ARTICLE_ABSTRACT } = row;
     const tokens = generateTokens(ARTICLE_ABSTRACT);
     const tokensDuplicateRemoved = removeDuplicateTokens(tokens);
@@ -30,6 +39,8 @@ const tokensGenerator = async () => {
       tokens,
       tokensDuplicateRemoved,
     ];
+
+    currentAbstractCount += 1;
   }
 
   console.log("done preprocessing .csv text");

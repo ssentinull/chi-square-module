@@ -10,6 +10,7 @@ const {
 } = require("../utils/chi-square.util");
 
 const DATASET_JSON_SAVE_PATH = "./data/output/dataset-sample.json";
+const FV_JSON_SAVE_PATH = "./data/output/feature-vectors.json";
 const FEATURE_VECTOR_50_TOKENS_SAVE_PATH =
   "./data/output/fv-tokens/fv-tokens-50.json";
 const FEATURE_VECTOR_50_TOKENS_BY_JOURNAL_SAVE_PATH =
@@ -38,9 +39,91 @@ const featureVectorsGenerator = async () => {
 
   console.log("done creating token list");
 
-  const featureVectors = [];
+  // //////////////////////////////////////////////////
+  // INVERTED INDEX METHOD
+  // //////////////////////////////////////////////////
+
+  let totalJournalAbstracts = 0;
+  const tokenListLength = tokenList.length - 1;
+  const appendedArticle = {};
+  const abstractsPerJournal = {};
+  const invertedIndex = {};
+
+  for (let i = 0; i <= tokenListLength; i++) {
+    const tokenListRow = tokenList[i];
+    const { JOURNAL_ID, ARTICLE_ID, TOKEN } = tokenListRow;
+
+    if (!appendedArticle[ARTICLE_ID]) {
+      appendedArticle[ARTICLE_ID] = 1;
+
+      totalJournalAbstracts++;
+
+      if (!abstractsPerJournal[JOURNAL_ID]) abstractsPerJournal[JOURNAL_ID] = 0;
+
+      abstractsPerJournal[JOURNAL_ID] += 1;
+    }
+
+    if (!invertedIndex[TOKEN]) invertedIndex[TOKEN] = [];
+
+    const tempObj = { JOURNAL_ID, ARTICLE_ID };
+
+    invertedIndex[TOKEN].push(tempObj);
+  }
+
+  // log the number of keys in invertedIndex a
+  console.log("invertedIndex keys: ", Object.keys(invertedIndex).length);
 
   let tokenListProcessNum = 0;
+  const chiSquareValues = [];
+
+  for (const token in invertedIndex) {
+    if (tokenListProcessNum % 10000 == 0)
+      console.log("tokenListProcessNum: ", tokenListProcessNum);
+
+    tokenListProcessNum++;
+
+    const tokenArray = invertedIndex[token];
+    const tokenArrayLength = tokenArray.length;
+
+    var journalIdsObj = tokenArray.reduce((obj, value) => {
+      obj[value.JOURNAL_ID] = (obj[value.JOURNAL_ID] || 0) + 1;
+      return obj;
+    }, {});
+
+    for (const journalId in journalIdsObj) {
+      const journalIdAbstracts = abstractsPerJournal[journalId];
+      const aValue = journalIdsObj[journalId];
+      const bValue = tokenArrayLength - aValue;
+      const cValue = journalIdAbstracts - aValue;
+      const dValue = totalJournalAbstracts - journalIdAbstracts - bValue;
+      const chiSquare =
+        (aValue * dValue - bValue * cValue) ** 2 /
+        ((aValue + bValue) * (cValue + dValue));
+
+      const tempObj = {
+        JOURNAL_ID: journalId,
+        TOKEN: token,
+        A_VALUE: aValue,
+        B_VALUE: bValue,
+        C_VALUE: cValue,
+        D_VALUE: dValue,
+        CHI_SQUARE: chiSquare,
+      };
+
+      chiSquareValues.push(tempObj);
+    }
+  }
+
+  writeJson(FV_JSON_SAVE_PATH, chiSquareValues);
+
+  //////////////////////////////////////
+
+  // //////////////////////////////////
+  // NORMAL ALGORITHM
+  // //////////////////////////////////
+
+  let tokenListProcessNum = 0;
+  const featureVectors = [];
 
   for (const tokenListRow of tokenList) {
     const chiSquareValues = calculateChiSquareValues(tokenListRow, jsonData);
@@ -53,6 +136,10 @@ const featureVectorsGenerator = async () => {
 
     tokenListProcessNum++;
   }
+
+  console.log(featureVectors[0]);
+
+  writeJson(FV_JSON_SAVE_PATH, featureVectors);
 
   console.log("done creating feature vectors");
   console.timeEnd("creating-feature-vectors");

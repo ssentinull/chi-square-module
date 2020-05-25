@@ -39,105 +39,9 @@ const featureVectorsGenerator = async () => {
 
   console.log("done creating token list");
 
-  // //////////////////////////////////////////////////
-  // INVERTED INDEX METHOD
-  // //////////////////////////////////////////////////
-
-  let totalJournalAbstracts = 0;
-  const tokenListLength = tokenList.length - 1;
-  const appendedArticle = {};
-  const abstractsPerJournal = {};
-  const invertedIndex = {};
-
-  for (let i = 0; i <= tokenListLength; i++) {
-    const tokenListRow = tokenList[i];
-    const { JOURNAL_ID, ARTICLE_ID, TOKEN } = tokenListRow;
-
-    if (!appendedArticle[ARTICLE_ID]) {
-      appendedArticle[ARTICLE_ID] = 1;
-
-      totalJournalAbstracts++;
-
-      if (!abstractsPerJournal[JOURNAL_ID]) abstractsPerJournal[JOURNAL_ID] = 0;
-
-      abstractsPerJournal[JOURNAL_ID] += 1;
-    }
-
-    if (!invertedIndex[TOKEN]) invertedIndex[TOKEN] = [];
-
-    const tempObj = { JOURNAL_ID, ARTICLE_ID };
-
-    invertedIndex[TOKEN].push(tempObj);
-  }
-
-  // log the number of keys in invertedIndex a
-  console.log("invertedIndex keys: ", Object.keys(invertedIndex).length);
-
-  let tokenListProcessNum = 0;
-  const chiSquareValues = [];
-
-  for (const token in invertedIndex) {
-    if (tokenListProcessNum % 10000 == 0)
-      console.log("tokenListProcessNum: ", tokenListProcessNum);
-
-    tokenListProcessNum++;
-
-    const tokenArray = invertedIndex[token];
-    const tokenArrayLength = tokenArray.length;
-
-    var journalIdsObj = tokenArray.reduce((obj, value) => {
-      obj[value.JOURNAL_ID] = (obj[value.JOURNAL_ID] || 0) + 1;
-      return obj;
-    }, {});
-
-    for (const journalId in journalIdsObj) {
-      const journalIdAbstracts = abstractsPerJournal[journalId];
-      const aValue = journalIdsObj[journalId];
-      const bValue = tokenArrayLength - aValue;
-      const cValue = journalIdAbstracts - aValue;
-      const dValue = totalJournalAbstracts - journalIdAbstracts - bValue;
-      const chiSquare =
-        (aValue * dValue - bValue * cValue) ** 2 /
-        ((aValue + bValue) * (cValue + dValue));
-
-      const tempObj = {
-        JOURNAL_ID: journalId,
-        TOKEN: token,
-        A_VALUE: aValue,
-        B_VALUE: bValue,
-        C_VALUE: cValue,
-        D_VALUE: dValue,
-        CHI_SQUARE: chiSquare,
-      };
-
-      chiSquareValues.push(tempObj);
-    }
-  }
-
-  writeJson(FV_JSON_SAVE_PATH, chiSquareValues);
-
   //////////////////////////////////////
 
-  // //////////////////////////////////
-  // NORMAL ALGORITHM
-  // //////////////////////////////////
-
-  let tokenListProcessNum = 0;
-  const featureVectors = [];
-
-  for (const tokenListRow of tokenList) {
-    const chiSquareValues = calculateChiSquareValues(tokenListRow, jsonData);
-    const featureVector = { ...tokenListRow, ...chiSquareValues };
-
-    featureVectors.push(featureVector);
-
-    if (tokenListProcessNum % 10000 == 0)
-      console.log("tokenListProcessNum: ", tokenListProcessNum);
-
-    tokenListProcessNum++;
-  }
-
-  console.log(featureVectors[0]);
+  const featureVectors = calculateChiSquareValues(tokenList);
 
   writeJson(FV_JSON_SAVE_PATH, featureVectors);
 
@@ -249,22 +153,22 @@ const featureVectorsGenerator = async () => {
   );
 
   const featureVectors50TokensByJournal = mapValues(
-    groupBy(uniqueTop50MFeatureVectors, "JOURNAL_TITLE"),
+    groupBy(uniqueTop50MFeatureVectors, "JOURNAL_ID"),
     (fvGroupedByTitle) => fvGroupedByTitle.map((fv) => fv.TOKEN)
   );
 
   const featureVectors100TokensByJournal = mapValues(
-    groupBy(uniqueTop100MFeatureVectors, "JOURNAL_TITLE"),
+    groupBy(uniqueTop100MFeatureVectors, "JOURNAL_ID"),
     (fvGroupedByTitle) => fvGroupedByTitle.map((fv) => fv.TOKEN)
   );
 
   const featureVectors200TokensByJournal = mapValues(
-    groupBy(uniqueTop200MFeatureVectors, "JOURNAL_TITLE"),
+    groupBy(uniqueTop200MFeatureVectors, "JOURNAL_ID"),
     (fvGroupedByTitle) => fvGroupedByTitle.map((fv) => fv.TOKEN)
   );
 
   const featureVectors500TokensByJournal = mapValues(
-    groupBy(uniqueTop500MFeatureVectors, "JOURNAL_TITLE"),
+    groupBy(uniqueTop500MFeatureVectors, "JOURNAL_ID"),
     (fvGroupedByTitle) => fvGroupedByTitle.map((fv) => fv.TOKEN)
   );
 

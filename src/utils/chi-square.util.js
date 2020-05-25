@@ -1,60 +1,73 @@
-const calculateChiSquareValues = (tokenListRow, jsonData) => {
-  let [aValue, bValue, cValue, dValue] = [0, 0, 0, 0];
+const calculateChiSquareValues = (tokenList) => {
+  let totalJournalAbstracts = 0;
+  const tokenListLength = tokenList.length - 1;
+  const appendedArticle = {};
+  const abstractsPerJournal = {};
+  const invertedIndex = {};
 
-  // compute the A, B, C, D, and X_SQUARE values
-  // go over every single tokens that's been spread out
-  const {
-    JOURNAL_ID: JOURNAL_ID_TOKEN_LIST,
-    TOKEN: TOKEN_TOKEN_LIST,
-  } = tokenListRow;
+  for (let i = 0; i <= tokenListLength; i++) {
+    const tokenListRow = tokenList[i];
+    const { JOURNAL_ID, ARTICLE_ID, TOKEN } = tokenListRow;
 
-  // check for the existance of the tokens in each articles
-  for (const jsonDataRow of jsonData) {
-    const {
-      JOURNAL_ID: JOURNAL_ID_JSON_DATA,
-      TOKENS_DUPLICATE_REMOVED: TOKEN_JSON_DATA,
-    } = jsonDataRow;
+    if (!appendedArticle[ARTICLE_ID]) {
+      appendedArticle[ARTICLE_ID] = 1;
 
-    if (
-      JOURNAL_ID_TOKEN_LIST === JOURNAL_ID_JSON_DATA &&
-      TOKEN_JSON_DATA.includes(TOKEN_TOKEN_LIST)
-    ) {
-      aValue += 1;
+      totalJournalAbstracts++;
+
+      if (!abstractsPerJournal[JOURNAL_ID]) abstractsPerJournal[JOURNAL_ID] = 0;
+
+      abstractsPerJournal[JOURNAL_ID] += 1;
     }
 
-    if (
-      JOURNAL_ID_TOKEN_LIST !== JOURNAL_ID_JSON_DATA &&
-      TOKEN_JSON_DATA.includes(TOKEN_TOKEN_LIST)
-    ) {
-      bValue += 1;
-    }
+    if (!invertedIndex[TOKEN]) invertedIndex[TOKEN] = [];
 
-    if (
-      JOURNAL_ID_TOKEN_LIST === JOURNAL_ID_JSON_DATA &&
-      !TOKEN_JSON_DATA.includes(TOKEN_TOKEN_LIST)
-    ) {
-      cValue += 1;
-    }
+    const tempObj = { JOURNAL_ID, ARTICLE_ID };
 
-    if (
-      JOURNAL_ID_TOKEN_LIST !== JOURNAL_ID_JSON_DATA &&
-      !TOKEN_JSON_DATA.includes(TOKEN_TOKEN_LIST)
-    ) {
-      dValue += 1;
-    }
+    invertedIndex[TOKEN].push(tempObj);
   }
 
-  const chiSquare =
-    (aValue * dValue - bValue * cValue) ** 2 /
-    ((aValue + bValue) * (cValue + dValue));
+  console.log("invertedIndex keys: ", Object.keys(invertedIndex).length);
 
-  const chiSquareValues = {
-    A_VALUE: aValue,
-    B_VALUE: bValue,
-    C_VALUE: cValue,
-    D_VALUE: dValue,
-    CHI_SQUARE: chiSquare,
-  };
+  let invertedIndexProcessNum = 0;
+  const chiSquareValues = [];
+
+  for (const token in invertedIndex) {
+    const tokenArray = invertedIndex[token];
+    const tokenArrayLength = tokenArray.length;
+
+    const journalIdsObj = tokenArray.reduce((obj, val) => {
+      obj[val.JOURNAL_ID] = (obj[val.JOURNAL_ID] || 0) + 1;
+      return obj;
+    }, {});
+
+    for (const journalId in journalIdsObj) {
+      const journalIdAbstracts = abstractsPerJournal[journalId];
+      const aValue = journalIdsObj[journalId];
+      const bValue = tokenArrayLength - aValue;
+      const cValue = journalIdAbstracts - aValue;
+      const dValue = totalJournalAbstracts - journalIdAbstracts - bValue;
+      const chiSquare =
+        (aValue * dValue - bValue * cValue) ** 2 /
+        ((aValue + bValue) * (cValue + dValue));
+
+      const tempObj = {
+        JOURNAL_ID: journalId,
+        TOKEN: token,
+        A_VALUE: aValue,
+        B_VALUE: bValue,
+        C_VALUE: cValue,
+        D_VALUE: dValue,
+        CHI_SQUARE: chiSquare,
+      };
+
+      chiSquareValues.push(tempObj);
+    }
+
+    if (invertedIndexProcessNum % 10000 == 0)
+      console.log("invertedIndexProcessNum: ", invertedIndexProcessNum);
+
+    invertedIndexProcessNum++;
+  }
 
   return chiSquareValues;
 };

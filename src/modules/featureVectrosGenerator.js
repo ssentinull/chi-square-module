@@ -10,7 +10,7 @@ const {
 } = require("../utils/chi-square.util");
 
 const DATASET_JSON_SAVE_PATH = "./data/output/dataset-sample.json";
-const FV_JSON_SAVE_PATH = "./data/output/feature-vectors.json";
+const CHI_SQUARE_SAVE_PATH = "./data/output/chi-square-feature-vectors.json";
 const FEATURE_VECTOR_50_TOKENS_SAVE_PATH =
   "./data/output/fv-tokens/fv-tokens-50.json";
 const FEATURE_VECTOR_50_TOKENS_BY_JOURNAL_SAVE_PATH =
@@ -43,7 +43,7 @@ const featureVectorsGenerator = async () => {
 
   const featureVectors = calculateChiSquareValues(tokenList);
 
-  writeJson(FV_JSON_SAVE_PATH, featureVectors);
+  writeJson(CHI_SQUARE_SAVE_PATH, featureVectors);
 
   console.log("done creating feature vectors");
   console.timeEnd("creating-feature-vectors");

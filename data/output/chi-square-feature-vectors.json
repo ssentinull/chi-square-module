@@ -1,0 +1,6077 @@
+[
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "pola",
+    "A_VALUE": 2,
+    "B_VALUE": 0,
+    "C_VALUE": 1,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 16.2
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "tanam",
+    "A_VALUE": 2,
+    "B_VALUE": 1,
+    "C_VALUE": 1,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 8.333333333333334
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "tanam",
+    "A_VALUE": 1,
+    "B_VALUE": 2,
+    "C_VALUE": 2,
+    "D_VALUE": 7,
+    "CHI_SQUARE": 0.3333333333333333
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "tumpang",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "sari",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "salah",
+    "A_VALUE": 1,
+    "B_VALUE": 2,
+    "C_VALUE": 2,
+    "D_VALUE": 7,
+    "CHI_SQUARE": 0.3333333333333333
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "salah",
+    "A_VALUE": 2,
+    "B_VALUE": 1,
+    "C_VALUE": 1,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 8.333333333333334
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "meningkatatkan",
+    "A_VALUE": 3,
+    "B_VALUE": 2,
+    "C_VALUE": 0,
+    "D_VALUE": 7,
+    "CHI_SQUARE": 12.6
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "meningkatatkan",
+    "A_VALUE": 2,
+    "B_VALUE": 3,
+    "C_VALUE": 1,
+    "D_VALUE": 6,
+    "CHI_SQUARE": 2.3142857142857145
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "efisiensi",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "efisiensi",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "guna",
+    "A_VALUE": 2,
+    "B_VALUE": 1,
+    "C_VALUE": 1,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 8.333333333333334
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "guna",
+    "A_VALUE": 1,
+    "B_VALUE": 2,
+    "C_VALUE": 2,
+    "D_VALUE": 7,
+    "CHI_SQUARE": 0.3333333333333333
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "lahan",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "dapat",
+    "A_VALUE": 2,
+    "B_VALUE": 0,
+    "C_VALUE": 1,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 16.2
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "usaha",
+    "A_VALUE": 1,
+    "B_VALUE": 2,
+    "C_VALUE": 2,
+    "D_VALUE": 7,
+    "CHI_SQUARE": 0.3333333333333333
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "usaha",
+    "A_VALUE": 1,
+    "B_VALUE": 2,
+    "C_VALUE": 2,
+    "D_VALUE": 7,
+    "CHI_SQUARE": 0.3333333333333333
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "usaha",
+    "A_VALUE": 1,
+    "B_VALUE": 2,
+    "C_VALUE": 2,
+    "D_VALUE": 7,
+    "CHI_SQUARE": 0.3333333333333333
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "jenis",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "jenis",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "cabai",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "merah",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "komoditas",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "sayur",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "milik",
+    "A_VALUE": 1,
+    "B_VALUE": 2,
+    "C_VALUE": 2,
+    "D_VALUE": 7,
+    "CHI_SQUARE": 0.3333333333333333
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "milik",
+    "A_VALUE": 1,
+    "B_VALUE": 2,
+    "C_VALUE": 2,
+    "D_VALUE": 7,
+    "CHI_SQUARE": 0.3333333333333333
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "milik",
+    "A_VALUE": 1,
+    "B_VALUE": 2,
+    "C_VALUE": 2,
+    "D_VALUE": 7,
+    "CHI_SQUARE": 0.3333333333333333
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "nilai",
+    "A_VALUE": 1,
+    "B_VALUE": 5,
+    "C_VALUE": 2,
+    "D_VALUE": 4,
+    "CHI_SQUARE": 1
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "nilai",
+    "A_VALUE": 3,
+    "B_VALUE": 3,
+    "C_VALUE": 0,
+    "D_VALUE": 6,
+    "CHI_SQUARE": 9
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "nilai",
+    "A_VALUE": 1,
+    "B_VALUE": 5,
+    "C_VALUE": 2,
+    "D_VALUE": 4,
+    "CHI_SQUARE": 1
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "nilai",
+    "A_VALUE": 1,
+    "B_VALUE": 5,
+    "C_VALUE": 2,
+    "D_VALUE": 4,
+    "CHI_SQUARE": 1
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "minta",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "minta",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "masyarakat",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "indonesia",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "indonesia",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "kentang",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "bawang",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "bawang",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "buncis",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "teliti",
+    "A_VALUE": 2,
+    "B_VALUE": 5,
+    "C_VALUE": 1,
+    "D_VALUE": 4,
+    "CHI_SQUARE": 0.2571428571428571
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "teliti",
+    "A_VALUE": 2,
+    "B_VALUE": 5,
+    "C_VALUE": 1,
+    "D_VALUE": 4,
+    "CHI_SQUARE": 0.2571428571428571
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "teliti",
+    "A_VALUE": 3,
+    "B_VALUE": 4,
+    "C_VALUE": 0,
+    "D_VALUE": 5,
+    "CHI_SQUARE": 6.428571428571429
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "tuju",
+    "A_VALUE": 3,
+    "B_VALUE": 7,
+    "C_VALUE": 0,
+    "D_VALUE": 2,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "tuju",
+    "A_VALUE": 3,
+    "B_VALUE": 7,
+    "C_VALUE": 0,
+    "D_VALUE": 2,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "tuju",
+    "A_VALUE": 3,
+    "B_VALUE": 7,
+    "C_VALUE": 0,
+    "D_VALUE": 2,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "tuju",
+    "A_VALUE": 1,
+    "B_VALUE": 9,
+    "C_VALUE": 2,
+    "D_VALUE": 0,
+    "CHI_SQUARE": 16.2
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "kaji",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "kaji",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "sistem",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "monokultur",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "tegak",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "dilakukann",
+    "A_VALUE": 1,
+    "B_VALUE": 6,
+    "C_VALUE": 2,
+    "D_VALUE": 3,
+    "CHI_SQUARE": 2.3142857142857145
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "dilakukann",
+    "A_VALUE": 1,
+    "B_VALUE": 6,
+    "C_VALUE": 2,
+    "D_VALUE": 3,
+    "CHI_SQUARE": 2.3142857142857145
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "dilakukann",
+    "A_VALUE": 2,
+    "B_VALUE": 5,
+    "C_VALUE": 1,
+    "D_VALUE": 4,
+    "CHI_SQUARE": 0.2571428571428571
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "dilakukann",
+    "A_VALUE": 3,
+    "B_VALUE": 4,
+    "C_VALUE": 0,
+    "D_VALUE": 5,
+    "CHI_SQUARE": 6.428571428571429
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "kebun",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "kebun",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "coba",
+    "A_VALUE": 2,
+    "B_VALUE": 1,
+    "C_VALUE": 1,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 8.333333333333334
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "coba",
+    "A_VALUE": 1,
+    "B_VALUE": 2,
+    "C_VALUE": 2,
+    "D_VALUE": 7,
+    "CHI_SQUARE": 0.3333333333333333
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "berastagi",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "tinggi",
+    "A_VALUE": 2,
+    "B_VALUE": 1,
+    "C_VALUE": 1,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 8.333333333333334
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "tinggi",
+    "A_VALUE": 1,
+    "B_VALUE": 2,
+    "C_VALUE": 2,
+    "D_VALUE": 7,
+    "CHI_SQUARE": 0.3333333333333333
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "dpl",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "tanah",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "andisol",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "laksana",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "laksana",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "juni",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "desember",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "rancang",
+    "A_VALUE": 3,
+    "B_VALUE": 1,
+    "C_VALUE": 0,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 18
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "rancang",
+    "A_VALUE": 1,
+    "B_VALUE": 3,
+    "C_VALUE": 2,
+    "D_VALUE": 6,
+    "CHI_SQUARE": 0
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "digunakann",
+    "A_VALUE": 3,
+    "B_VALUE": 7,
+    "C_VALUE": 0,
+    "D_VALUE": 2,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "digunakann",
+    "A_VALUE": 2,
+    "B_VALUE": 8,
+    "C_VALUE": 1,
+    "D_VALUE": 1,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "digunakann",
+    "A_VALUE": 2,
+    "B_VALUE": 8,
+    "C_VALUE": 1,
+    "D_VALUE": 1,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "digunakann",
+    "A_VALUE": 3,
+    "B_VALUE": 7,
+    "C_VALUE": 0,
+    "D_VALUE": 2,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "acak",
+    "A_VALUE": 2,
+    "B_VALUE": 1,
+    "C_VALUE": 1,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 8.333333333333334
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "acak",
+    "A_VALUE": 1,
+    "B_VALUE": 2,
+    "C_VALUE": 2,
+    "D_VALUE": 7,
+    "CHI_SQUARE": 0.3333333333333333
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "kelompok",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "rak",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "enam",
+    "A_VALUE": 1,
+    "B_VALUE": 2,
+    "C_VALUE": 2,
+    "D_VALUE": 7,
+    "CHI_SQUARE": 0.3333333333333333
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "enam",
+    "A_VALUE": 1,
+    "B_VALUE": 2,
+    "C_VALUE": 2,
+    "D_VALUE": 7,
+    "CHI_SQUARE": 0.3333333333333333
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "enam",
+    "A_VALUE": 1,
+    "B_VALUE": 2,
+    "C_VALUE": 2,
+    "D_VALUE": 7,
+    "CHI_SQUARE": 0.3333333333333333
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "laku",
+    "A_VALUE": 3,
+    "B_VALUE": 1,
+    "C_VALUE": 0,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 18
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "laku",
+    "A_VALUE": 1,
+    "B_VALUE": 3,
+    "C_VALUE": 2,
+    "D_VALUE": 6,
+    "CHI_SQUARE": 0
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "ulang",
+    "A_VALUE": 3,
+    "B_VALUE": 0,
+    "C_VALUE": 0,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 27
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "uji",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "uji",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "hasil",
+    "A_VALUE": 3,
+    "B_VALUE": 8,
+    "C_VALUE": 0,
+    "D_VALUE": 1,
+    "CHI_SQUARE": 0.8181818181818182
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "hasil",
+    "A_VALUE": 2,
+    "B_VALUE": 9,
+    "C_VALUE": 1,
+    "D_VALUE": 0,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "hasil",
+    "A_VALUE": 3,
+    "B_VALUE": 8,
+    "C_VALUE": 0,
+    "D_VALUE": 1,
+    "CHI_SQUARE": 0.8181818181818182
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "hasil",
+    "A_VALUE": 3,
+    "B_VALUE": 8,
+    "C_VALUE": 0,
+    "D_VALUE": 1,
+    "CHI_SQUARE": 0.8181818181818182
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "penelitiann",
+    "A_VALUE": 3,
+    "B_VALUE": 8,
+    "C_VALUE": 0,
+    "D_VALUE": 1,
+    "CHI_SQUARE": 0.8181818181818182
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "penelitiann",
+    "A_VALUE": 3,
+    "B_VALUE": 8,
+    "C_VALUE": 0,
+    "D_VALUE": 1,
+    "CHI_SQUARE": 0.8181818181818182
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "penelitiann",
+    "A_VALUE": 2,
+    "B_VALUE": 9,
+    "C_VALUE": 1,
+    "D_VALUE": 0,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "penelitiann",
+    "A_VALUE": 3,
+    "B_VALUE": 8,
+    "C_VALUE": 0,
+    "D_VALUE": 1,
+    "CHI_SQUARE": 0.8181818181818182
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "pertumbuhann",
+    "A_VALUE": 2,
+    "B_VALUE": 0,
+    "C_VALUE": 1,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 16.2
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "vegetatif",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "beda",
+    "A_VALUE": 1,
+    "B_VALUE": 2,
+    "C_VALUE": 2,
+    "D_VALUE": 7,
+    "CHI_SQUARE": 0.3333333333333333
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "beda",
+    "A_VALUE": 1,
+    "B_VALUE": 2,
+    "C_VALUE": 2,
+    "D_VALUE": 7,
+    "CHI_SQUARE": 0.3333333333333333
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "beda",
+    "A_VALUE": 1,
+    "B_VALUE": 2,
+    "C_VALUE": 2,
+    "D_VALUE": 7,
+    "CHI_SQUARE": 0.3333333333333333
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "nyata",
+    "A_VALUE": 2,
+    "B_VALUE": 1,
+    "C_VALUE": 1,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 8.333333333333334
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "nyata",
+    "A_VALUE": 1,
+    "B_VALUE": 2,
+    "C_VALUE": 2,
+    "D_VALUE": 7,
+    "CHI_SQUARE": 0.3333333333333333
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "tara",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "untung",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "untung",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "bersih",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "usahatani",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "banding",
+    "A_VALUE": 3,
+    "B_VALUE": 4,
+    "C_VALUE": 0,
+    "D_VALUE": 5,
+    "CHI_SQUARE": 6.428571428571429
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "banding",
+    "A_VALUE": 2,
+    "B_VALUE": 5,
+    "C_VALUE": 1,
+    "D_VALUE": 4,
+    "CHI_SQUARE": 0.2571428571428571
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "banding",
+    "A_VALUE": 2,
+    "B_VALUE": 5,
+    "C_VALUE": 1,
+    "D_VALUE": 4,
+    "CHI_SQUARE": 0.2571428571428571
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "rendemen",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "rendemen",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "minyak",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "minyak",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "ekstraksi",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "ekstraksi",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "tahap",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "bunga",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "larut",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "melati",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "gambir",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "jasminum",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "officinale",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "heksan",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "jam",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "jam",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "uap",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "concrete",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "oleh",
+    "A_VALUE": 1,
+    "B_VALUE": 2,
+    "C_VALUE": 2,
+    "D_VALUE": 7,
+    "CHI_SQUARE": 0.3333333333333333
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "oleh",
+    "A_VALUE": 1,
+    "B_VALUE": 2,
+    "C_VALUE": 2,
+    "D_VALUE": 7,
+    "CHI_SQUARE": 0.3333333333333333
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "oleh",
+    "A_VALUE": 1,
+    "B_VALUE": 2,
+    "C_VALUE": 2,
+    "D_VALUE": 7,
+    "CHI_SQUARE": 0.3333333333333333
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "etanol",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "terap",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "dua",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "kali",
+    "A_VALUE": 2,
+    "B_VALUE": 1,
+    "C_VALUE": 1,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 8.333333333333334
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "kali",
+    "A_VALUE": 1,
+    "B_VALUE": 2,
+    "C_VALUE": 2,
+    "D_VALUE": 7,
+    "CHI_SQUARE": 0.3333333333333333
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "lengkap",
+    "A_VALUE": 2,
+    "B_VALUE": 2,
+    "C_VALUE": 1,
+    "D_VALUE": 7,
+    "CHI_SQUARE": 4.5
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "lengkap",
+    "A_VALUE": 1,
+    "B_VALUE": 3,
+    "C_VALUE": 2,
+    "D_VALUE": 6,
+    "CHI_SQUARE": 0
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "lengkap",
+    "A_VALUE": 1,
+    "B_VALUE": 3,
+    "C_VALUE": 2,
+    "D_VALUE": 6,
+    "CHI_SQUARE": 0
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "faktorial",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "ram",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "yang",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "amat",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "amat",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "indeks",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "indeks",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "bias",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "komponen",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "susun",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "susun",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "ing",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "mutu",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "mutu",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "indeksbias",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "kandung",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "kandung",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "kadar",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "kadar",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "atsiri",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "delapan",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "identifikasi",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "linalol",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "linalil",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "asetat",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "asetat",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "indol",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "fenol",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "bensil",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "metil",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "antranilat",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "alkohol",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "cisjasmon",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "bagai",
+    "A_VALUE": 1,
+    "B_VALUE": 4,
+    "C_VALUE": 2,
+    "D_VALUE": 5,
+    "CHI_SQUARE": 0.2571428571428571
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "bagai",
+    "A_VALUE": 1,
+    "B_VALUE": 4,
+    "C_VALUE": 2,
+    "D_VALUE": 5,
+    "CHI_SQUARE": 0.2571428571428571
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "bagai",
+    "A_VALUE": 3,
+    "B_VALUE": 2,
+    "C_VALUE": 0,
+    "D_VALUE": 7,
+    "CHI_SQUARE": 12.6
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "acu",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "pilih",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "proses",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "proses",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "min",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "mal",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "kunci",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "kualitas",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "kualitas",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "melatiab",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "stract",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "prabawati",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "endang",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "suyanti",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "and",
+    "A_VALUE": 2,
+    "B_VALUE": 2,
+    "C_VALUE": 1,
+    "D_VALUE": 7,
+    "CHI_SQUARE": 4.5
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "and",
+    "A_VALUE": 1,
+    "B_VALUE": 3,
+    "C_VALUE": 2,
+    "D_VALUE": 6,
+    "CHI_SQUARE": 0
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "and",
+    "A_VALUE": 1,
+    "B_VALUE": 3,
+    "C_VALUE": 2,
+    "D_VALUE": 6,
+    "CHI_SQUARE": 0
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "dondy",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "asb",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "sen",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "tial",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "oil",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "com",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "nent",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "linalool",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "tate",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "indole",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "phenole",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "benzil",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "methyl",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "antranilate",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "hol",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "cis",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "jasmone",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "were",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "indentified",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "tumbuh",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "tumbuh",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "kubis",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "dditingkatkan",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "aplikasi",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "aplikasi",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "pupuk",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "serbuk",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "nutrifarm",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "benih",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "semai",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "kombinasi",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "npk",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "dosis",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "lapang",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "optimum",
+    "A_VALUE": 1,
+    "B_VALUE": 2,
+    "C_VALUE": 2,
+    "D_VALUE": 7,
+    "CHI_SQUARE": 0.3333333333333333
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "optimum",
+    "A_VALUE": 1,
+    "B_VALUE": 2,
+    "C_VALUE": 2,
+    "D_VALUE": 7,
+    "CHI_SQUARE": 0.3333333333333333
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "optimum",
+    "A_VALUE": 1,
+    "B_VALUE": 2,
+    "C_VALUE": 2,
+    "D_VALUE": 7,
+    "CHI_SQUARE": 0.3333333333333333
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "produksi",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "bobot",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "putih",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "kultivar",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "green",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "coronet",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "petak",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "pisah",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "pisah",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "utama",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "utama",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "dasar",
+    "A_VALUE": 1,
+    "B_VALUE": 3,
+    "C_VALUE": 2,
+    "D_VALUE": 6,
+    "CHI_SQUARE": 0
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "dasar",
+    "A_VALUE": 1,
+    "B_VALUE": 3,
+    "C_VALUE": 2,
+    "D_VALUE": 6,
+    "CHI_SQUARE": 0
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "dasar",
+    "A_VALUE": 1,
+    "B_VALUE": 3,
+    "C_VALUE": 2,
+    "D_VALUE": 6,
+    "CHI_SQUARE": 0
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "dasar",
+    "A_VALUE": 1,
+    "B_VALUE": 3,
+    "C_VALUE": 2,
+    "D_VALUE": 6,
+    "CHI_SQUARE": 0
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "level",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "anak",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "campur",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "rata",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "sisa",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "minggu",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "minggu",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "dibudidayakan",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "mulsa",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "plastik",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "hitam",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "perak",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "gejala",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "fitotoksisitas",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "klorosis",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "abnormal",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "segar",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "meningkatat",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "meningkatat",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "beri",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "kontrol",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "mandiri",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "total",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "seed",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "compared",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 0,
+    "TOKEN": "control",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "kawasan",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "kawasan",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "estuari",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "wilayah",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "kaya",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "unsur",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "hara",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "daerah",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "pantai",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "ubah",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "ekosistem",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "dangkal",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "sebab",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "turun",
+    "A_VALUE": 1,
+    "B_VALUE": 2,
+    "C_VALUE": 2,
+    "D_VALUE": 7,
+    "CHI_SQUARE": 0.3333333333333333
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "turun",
+    "A_VALUE": 1,
+    "B_VALUE": 2,
+    "C_VALUE": 2,
+    "D_VALUE": 7,
+    "CHI_SQUARE": 0.3333333333333333
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "turun",
+    "A_VALUE": 1,
+    "B_VALUE": 2,
+    "C_VALUE": 2,
+    "D_VALUE": 7,
+    "CHI_SQUARE": 0.3333333333333333
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "luas",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "mangrove",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "mangrove",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "dampak",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "dampak",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "sumbang",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "rentan",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "sumber",
+    "A_VALUE": 1,
+    "B_VALUE": 3,
+    "C_VALUE": 2,
+    "D_VALUE": 6,
+    "CHI_SQUARE": 0
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "sumber",
+    "A_VALUE": 2,
+    "B_VALUE": 2,
+    "C_VALUE": 1,
+    "D_VALUE": 7,
+    "CHI_SQUARE": 4.5
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "sumber",
+    "A_VALUE": 1,
+    "B_VALUE": 3,
+    "C_VALUE": 2,
+    "D_VALUE": 6,
+    "CHI_SQUARE": 0
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "daya",
+    "A_VALUE": 1,
+    "B_VALUE": 2,
+    "C_VALUE": 2,
+    "D_VALUE": 7,
+    "CHI_SQUARE": 0.3333333333333333
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "daya",
+    "A_VALUE": 1,
+    "B_VALUE": 2,
+    "C_VALUE": 2,
+    "D_VALUE": 7,
+    "CHI_SQUARE": 0.3333333333333333
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "daya",
+    "A_VALUE": 1,
+    "B_VALUE": 2,
+    "C_VALUE": 2,
+    "D_VALUE": 7,
+    "CHI_SQUARE": 0.3333333333333333
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "kepiting",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "bakau",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "mmengetahui",
+    "A_VALUE": 2,
+    "B_VALUE": 2,
+    "C_VALUE": 1,
+    "D_VALUE": 7,
+    "CHI_SQUARE": 4.5
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "mmengetahui",
+    "A_VALUE": 1,
+    "B_VALUE": 3,
+    "C_VALUE": 2,
+    "D_VALUE": 6,
+    "CHI_SQUARE": 0
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "mmengetahui",
+    "A_VALUE": 1,
+    "B_VALUE": 3,
+    "C_VALUE": 2,
+    "D_VALUE": 6,
+    "CHI_SQUARE": 0
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "tingkat",
+    "A_VALUE": 2,
+    "B_VALUE": 1,
+    "C_VALUE": 1,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 8.333333333333334
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "tingkat",
+    "A_VALUE": 1,
+    "B_VALUE": 2,
+    "C_VALUE": 2,
+    "D_VALUE": 7,
+    "CHI_SQUARE": 0.3333333333333333
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "resiko",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "potensi",
+    "A_VALUE": 1,
+    "B_VALUE": 2,
+    "C_VALUE": 2,
+    "D_VALUE": 7,
+    "CHI_SQUARE": 0.3333333333333333
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "potensi",
+    "A_VALUE": 2,
+    "B_VALUE": 1,
+    "C_VALUE": 1,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 8.333333333333334
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "lanjut",
+    "A_VALUE": 2,
+    "B_VALUE": 2,
+    "C_VALUE": 1,
+    "D_VALUE": 7,
+    "CHI_SQUARE": 4.5
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "lanjut",
+    "A_VALUE": 1,
+    "B_VALUE": 3,
+    "C_VALUE": 2,
+    "D_VALUE": 6,
+    "CHI_SQUARE": 0
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "lanjut",
+    "A_VALUE": 1,
+    "B_VALUE": 3,
+    "C_VALUE": 2,
+    "D_VALUE": 6,
+    "CHI_SQUARE": 0
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "sungai",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "mahakam",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "kalimantan",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "timur",
+    "A_VALUE": 1,
+    "B_VALUE": 2,
+    "C_VALUE": 2,
+    "D_VALUE": 7,
+    "CHI_SQUARE": 0.3333333333333333
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "timur",
+    "A_VALUE": 2,
+    "B_VALUE": 1,
+    "C_VALUE": 1,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 8.333333333333334
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "analisis",
+    "A_VALUE": 2,
+    "B_VALUE": 1,
+    "C_VALUE": 1,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 8.333333333333334
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "analisis",
+    "A_VALUE": 1,
+    "B_VALUE": 2,
+    "C_VALUE": 2,
+    "D_VALUE": 7,
+    "CHI_SQUARE": 0.3333333333333333
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "perangkat",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "lunak",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "psa",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "productivity",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "susceptibility",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "analysis",
+    "A_VALUE": 2,
+    "B_VALUE": 0,
+    "C_VALUE": 1,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 16.2
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "eestuari",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "rendah",
+    "A_VALUE": 1,
+    "B_VALUE": 2,
+    "C_VALUE": 2,
+    "D_VALUE": 7,
+    "CHI_SQUARE": 0.3333333333333333
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "rendah",
+    "A_VALUE": 2,
+    "B_VALUE": 1,
+    "C_VALUE": 1,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 8.333333333333334
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "produktivitas",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "mampu",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "pulih",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "tunjuk",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "susceptabilitas",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "ikan",
+    "A_VALUE": 3,
+    "B_VALUE": 3,
+    "C_VALUE": 0,
+    "D_VALUE": 6,
+    "CHI_SQUARE": 9
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "ikan",
+    "A_VALUE": 3,
+    "B_VALUE": 3,
+    "C_VALUE": 0,
+    "D_VALUE": 6,
+    "CHI_SQUARE": 9
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "aktivitas",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "aktivitas",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "air",
+    "A_VALUE": 2,
+    "B_VALUE": 2,
+    "C_VALUE": 1,
+    "D_VALUE": 7,
+    "CHI_SQUARE": 4.5
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "air",
+    "A_VALUE": 2,
+    "B_VALUE": 2,
+    "C_VALUE": 1,
+    "D_VALUE": 7,
+    "CHI_SQUARE": 4.5
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "kondisi",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "kondisi",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "peluang",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "sedia",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "tangkap",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "tangkap",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "lebih",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "hadap",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "kelola",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "kelola",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "bas",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "kapasitas",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "alternatif",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "alternatif",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "dekat",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "kendali",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "faktor",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "input",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "efisien",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "ukur",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "teknis",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "manfaat",
+    "A_VALUE": 1,
+    "B_VALUE": 2,
+    "C_VALUE": 2,
+    "D_VALUE": 7,
+    "CHI_SQUARE": 0.3333333333333333
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "manfaat",
+    "A_VALUE": 1,
+    "B_VALUE": 2,
+    "C_VALUE": 2,
+    "D_VALUE": 7,
+    "CHI_SQUARE": 0.3333333333333333
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "manfaat",
+    "A_VALUE": 1,
+    "B_VALUE": 2,
+    "C_VALUE": 2,
+    "D_VALUE": 7,
+    "CHI_SQUARE": 0.3333333333333333
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "alat",
+    "A_VALUE": 2,
+    "B_VALUE": 0,
+    "C_VALUE": 1,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 16.2
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "pukat",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "cincin",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "banda",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "aceh",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "analis",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "analis",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "teknik",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "data",
+    "A_VALUE": 2,
+    "B_VALUE": 2,
+    "C_VALUE": 1,
+    "D_VALUE": 7,
+    "CHI_SQUARE": 4.5
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "data",
+    "A_VALUE": 1,
+    "B_VALUE": 3,
+    "C_VALUE": 2,
+    "D_VALUE": 6,
+    "CHI_SQUARE": 0
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "data",
+    "A_VALUE": 1,
+    "B_VALUE": 3,
+    "C_VALUE": 2,
+    "D_VALUE": 6,
+    "CHI_SQUARE": 0
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "envelopment",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "dea",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "program",
+    "A_VALUE": 2,
+    "B_VALUE": 0,
+    "C_VALUE": 1,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 16.2
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "linear",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "linier",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "programming",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "bantu",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "software",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "deap",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "version",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "olah",
+    "A_VALUE": 2,
+    "B_VALUE": 2,
+    "C_VALUE": 1,
+    "D_VALUE": 7,
+    "CHI_SQUARE": 4.5
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "olah",
+    "A_VALUE": 1,
+    "B_VALUE": 3,
+    "C_VALUE": 2,
+    "D_VALUE": 6,
+    "CHI_SQUARE": 0
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "olah",
+    "A_VALUE": 1,
+    "B_VALUE": 3,
+    "C_VALUE": 2,
+    "D_VALUE": 6,
+    "CHI_SQUARE": 0
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "microsoft",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "excel",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "armada",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "purse",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "seine",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "capai",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "capai",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "nelayan",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "kurang",
+    "A_VALUE": 1,
+    "B_VALUE": 3,
+    "C_VALUE": 2,
+    "D_VALUE": 6,
+    "CHI_SQUARE": 0
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "kurang",
+    "A_VALUE": 2,
+    "B_VALUE": 2,
+    "C_VALUE": 1,
+    "D_VALUE": 7,
+    "CHI_SQUARE": 4.5
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "kurang",
+    "A_VALUE": 1,
+    "B_VALUE": 3,
+    "C_VALUE": 2,
+    "D_VALUE": 6,
+    "CHI_SQUARE": 0
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "survei",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "hidroakustik",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "oktober",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "kapal",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "mutiara",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "balai",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "riset",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "laut",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "laut",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "muara",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "jakarta",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "echosounder",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "menu",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "expanded",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "bottom",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "layer",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "back",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "scattering",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "volume",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "hambur",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "target",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "strength",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "densitas",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "demersal",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "trawl",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "verifikasi",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "sebar",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "lintas",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 1,
+    "TOKEN": "kisar",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "kisar",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "budidaya",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "tambak",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "andal",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "kabupaten",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "sidoarjo",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "provinsi",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "jawa",
+    "A_VALUE": 2,
+    "B_VALUE": 0,
+    "C_VALUE": 1,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 16.2
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "giat",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "bahan",
+    "A_VALUE": 2,
+    "B_VALUE": 3,
+    "C_VALUE": 1,
+    "D_VALUE": 6,
+    "CHI_SQUARE": 2.3142857142857145
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "bahan",
+    "A_VALUE": 3,
+    "B_VALUE": 2,
+    "C_VALUE": 0,
+    "D_VALUE": 7,
+    "CHI_SQUARE": 12.6
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "cemar",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "logam",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "berat",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "berat",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "pesisir",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "jadi",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "jadi",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "menentukann",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "konsentrasi",
+    "A_VALUE": 2,
+    "B_VALUE": 1,
+    "C_VALUE": 1,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 8.333333333333334
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "konsentrasi",
+    "A_VALUE": 1,
+    "B_VALUE": 2,
+    "C_VALUE": 2,
+    "D_VALUE": 7,
+    "CHI_SQUARE": 0.3333333333333333
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "status",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "hubung",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "hubung",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "kait",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "camat",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "jabon",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "ambil",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "contoh",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "contoh",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "stasiun",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "laboratorium",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "laboratorium",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "deskriptif",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "metode",
+    "A_VALUE": 2,
+    "B_VALUE": 1,
+    "C_VALUE": 1,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 8.333333333333334
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "metode",
+    "A_VALUE": 1,
+    "B_VALUE": 2,
+    "C_VALUE": 2,
+    "D_VALUE": 7,
+    "CHI_SQUARE": 0.3333333333333333
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "storage",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "retrieval",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "storet",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "biota",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "tentu",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "golong",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "golong",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "saran",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "rang",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "instalasi",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "limbah",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "rehabilitasi",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "hutan",
+    "A_VALUE": 1,
+    "B_VALUE": 2,
+    "C_VALUE": 2,
+    "D_VALUE": 7,
+    "CHI_SQUARE": 0.3333333333333333
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "hutan",
+    "A_VALUE": 2,
+    "B_VALUE": 1,
+    "C_VALUE": 1,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 8.333333333333334
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "bioakumulator",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "melakukann",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "liput",
+    "A_VALUE": 2,
+    "B_VALUE": 1,
+    "C_VALUE": 1,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 8.333333333333334
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "liput",
+    "A_VALUE": 1,
+    "B_VALUE": 2,
+    "C_VALUE": 2,
+    "D_VALUE": 7,
+    "CHI_SQUARE": 0.3333333333333333
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "pantau",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "bina",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "tega",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "hukum",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "produktif",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "belut",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "monopterus",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "albus",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "tawar",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "konsumsi",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "jual",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "hidup",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "harga",
+    "A_VALUE": 2,
+    "B_VALUE": 0,
+    "C_VALUE": 1,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 16.2
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "transportasi",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "tampung",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "timbul",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "mati",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "stok",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "terima",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "tangan",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "pasca",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "salin",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "tekan",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "bisnis",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "evaluasi",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "sintas",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "dagang",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "pasok",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "lokasi",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "ciamis",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "barat",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "cilacap",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "lumajang",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "pelihara",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "hari",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "salinitas",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "tambah",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "garam",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "krosok",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "tepung",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "protein",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "alami",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "naik",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "butuh",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "ganti",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "ganti",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "peran",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "pakan",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "apung",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "pengaruh",
+    "A_VALUE": 1,
+    "B_VALUE": 2,
+    "C_VALUE": 2,
+    "D_VALUE": 7,
+    "CHI_SQUARE": 0.3333333333333333
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "pengaruh",
+    "A_VALUE": 2,
+    "B_VALUE": 1,
+    "C_VALUE": 1,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 8.333333333333334
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "fisik",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "fisik",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "larva",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "hermetia",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "illucens",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "azolla",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "ral",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "formula",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "parameter",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "parameter",
+    "A_VALUE": 1,
+    "B_VALUE": 1,
+    "C_VALUE": 2,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 1.8
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "rasio",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "pengembangann",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "unit",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "density",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "keras",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "meningkatatnya",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "efek",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 2,
+    "TOKEN": "buat",
+    "A_VALUE": 1,
+    "B_VALUE": 2,
+    "C_VALUE": 2,
+    "D_VALUE": 7,
+    "CHI_SQUARE": 0.3333333333333333
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "buat",
+    "A_VALUE": 2,
+    "B_VALUE": 1,
+    "C_VALUE": 1,
+    "D_VALUE": 8,
+    "CHI_SQUARE": 8.333333333333334
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "bambu",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "cepat",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "daur",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "relatif",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "pendek",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "alam",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "janji",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "kayu",
+    "A_VALUE": 2,
+    "B_VALUE": 0,
+    "C_VALUE": 1,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 16.2
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "bangun",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "batas",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "bentuk",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "dimensi",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "produk",
+    "A_VALUE": 2,
+    "B_VALUE": 0,
+    "C_VALUE": 1,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 16.2
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "lamina",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "atas",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "lapis",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "sifat",
+    "A_VALUE": 3,
+    "B_VALUE": 0,
+    "C_VALUE": 0,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 27
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "majemuk",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "pusat",
+    "A_VALUE": 2,
+    "B_VALUE": 0,
+    "C_VALUE": 1,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 16.2
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "kembang",
+    "A_VALUE": 2,
+    "B_VALUE": 0,
+    "C_VALUE": 1,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 16.2
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "teknologi",
+    "A_VALUE": 2,
+    "B_VALUE": 0,
+    "C_VALUE": 1,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 16.2
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "bogor",
+    "A_VALUE": 2,
+    "B_VALUE": 0,
+    "C_VALUE": 1,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 16.2
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "andong",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "gigantochloa",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "pseudoarundinacea",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "rekat",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "tanin",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "resorsinol",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "formaldehida",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "trf",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "mangium",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "acacia",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "tusam",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "pinus",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "merkusii",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "fisis",
+    "A_VALUE": 2,
+    "B_VALUE": 0,
+    "C_VALUE": 1,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 16.2
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "mekanis",
+    "A_VALUE": 2,
+    "B_VALUE": 0,
+    "C_VALUE": 1,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 16.2
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "rapat",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "tengah",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "stabil",
+    "A_VALUE": 2,
+    "B_VALUE": 0,
+    "C_VALUE": 1,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 16.2
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "komposisi",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "tujuh",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "asal",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "hulan",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "sosial",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "ekonomi",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "manis",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "trendah",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "surian",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "susut",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "tangensialnya",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "kecuali",
+    "A_VALUE": 2,
+    "B_VALUE": 0,
+    "C_VALUE": 1,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 16.2
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "perupuk",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "ering",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "hati",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "kelas",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "kuat",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "iii",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "konstruksi",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "ringan",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "mebel",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "kusen",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "jarak",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "pagar",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "jatropha",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "curcas",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "dalamnyaa",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "racun",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "makan",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "ikat",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "rangkap",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "akibat",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "sesuai",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "biodiesel",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "cari",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "karakteristik",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "epoksi",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "baku",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "lumas",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "mesin",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "otomotif",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "bumi",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "kebumen",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "ntb",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "lampung",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "fisika",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "kimia",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "viskositas",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "flash",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "point",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "pour",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "bilang",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "asam",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "sabun",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "iod",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "reaksi",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "epoksidasi",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "variabel",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "suhu",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "katalis",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "hso",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "hidrogen",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "peroksida",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "oksiran",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "penuh",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "syarat",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "analisa",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "pengujiann",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "ftir",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "baik",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "modifikasi",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "interesterifikasi",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "nabati",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "blending",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "ester",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "sintestis",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "ketidakjenuhan",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "penambahann",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "senyawa",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "operasi",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "mol",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "besar",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  },
+  {
+    "JOURNAL_ID": 4,
+    "TOKEN": "poliol",
+    "A_VALUE": 1,
+    "B_VALUE": 0,
+    "C_VALUE": 2,
+    "D_VALUE": 9,
+    "CHI_SQUARE": 7.363636363636363
+  }
+]

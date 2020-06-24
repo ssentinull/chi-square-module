@@ -11,14 +11,6 @@ const {
 
 const DATASET_JSON_SAVE_PATH = "./data/output/dataset-sample.json";
 const CHI_SQUARE_SAVE_PATH = "./data/output/chi-square-feature-vectors.json";
-const FEATURE_VECTOR_50_TOKENS_SAVE_PATH =
-  "./data/output/fv-tokens/fv-tokens-50.json";
-const FEATURE_VECTOR_50_TOKENS_BY_JOURNAL_SAVE_PATH =
-  "./data/output/fv-tokens-by-journal/fv-tokens-by-journal-50.json";
-const FEATURE_VECTOR_100_TOKENS_SAVE_PATH =
-  "./data/output/fv-tokens/fv-tokens-100.json";
-const FEATURE_VECTOR_100_TOKENS_BY_JOURNAL_SAVE_PATH =
-  "./data/output/fv-tokens-by-journal/fv-tokens-by-journal-100.json";
 const FEATURE_VECTOR_200_TOKENS_SAVE_PATH =
   "./data/output/fv-tokens/fv-tokens-200.json";
 const FEATURE_VECTOR_200_TOKENS_BY_JOURNAL_SAVE_PATH =
@@ -66,8 +58,6 @@ const featureVectorsGenerator = async () => {
 
   console.time("pick-top-m-feature-vectors");
 
-  const top50MFeatureVectors = [];
-  const top100MFeatureVectors = [];
   const top200MFeatureVectors = [];
   const top500MFeatureVectors = [];
 
@@ -80,14 +70,6 @@ const featureVectorsGenerator = async () => {
     const sortedFeatureVectors = sortChiSquareValueDescendingly(
       uniqueFeatureVectors
     );
-    const top50FeatureVectors = sliceTopTermsFeatureVectors(
-      sortedFeatureVectors,
-      50
-    );
-    const top100FeatureVectors = sliceTopTermsFeatureVectors(
-      sortedFeatureVectors,
-      100
-    );
     const top200FeatureVectors = sliceTopTermsFeatureVectors(
       sortedFeatureVectors,
       200
@@ -97,8 +79,6 @@ const featureVectorsGenerator = async () => {
       500
     );
 
-    top50MFeatureVectors.push(...top50FeatureVectors);
-    top100MFeatureVectors.push(...top100FeatureVectors);
     top200MFeatureVectors.push(...top200FeatureVectors);
     top500MFeatureVectors.push(...top500FeatureVectors);
   }
@@ -111,14 +91,6 @@ const featureVectorsGenerator = async () => {
 
   console.time("filtering-duplicate-feature-vectors");
 
-  const uniqueTop50MFeatureVectors = uniqBy(
-    top50MFeatureVectors,
-    (fv) => fv.TOKEN
-  );
-  const uniqueTop100MFeatureVectors = uniqBy(
-    top100MFeatureVectors,
-    (fv) => fv.TOKEN
-  );
   const uniqueTop200MFeatureVectors = uniqBy(
     top200MFeatureVectors,
     (fv) => fv.TOKEN
@@ -136,30 +108,12 @@ const featureVectorsGenerator = async () => {
 
   console.time("saving-feature-vector-tokens-as-json");
 
-  const featureVectors50Tokens = uniqueTop50MFeatureVectors.map(
-    (featureVector) => featureVector.TOKEN
-  );
-
-  const featureVectors100Tokens = uniqueTop100MFeatureVectors.map(
-    (featureVector) => featureVector.TOKEN
-  );
-
   const featureVectors200Tokens = uniqueTop200MFeatureVectors.map(
     (featureVector) => featureVector.TOKEN
   );
 
   const featureVectors500Tokens = uniqueTop500MFeatureVectors.map(
     (featureVector) => featureVector.TOKEN
-  );
-
-  const featureVectors50TokensByJournal = mapValues(
-    groupBy(uniqueTop50MFeatureVectors, "JOURNAL_ID"),
-    (fvGroupedByTitle) => fvGroupedByTitle.map((fv) => fv.TOKEN)
-  );
-
-  const featureVectors100TokensByJournal = mapValues(
-    groupBy(uniqueTop100MFeatureVectors, "JOURNAL_ID"),
-    (fvGroupedByTitle) => fvGroupedByTitle.map((fv) => fv.TOKEN)
   );
 
   const featureVectors200TokensByJournal = mapValues(
@@ -170,18 +124,6 @@ const featureVectorsGenerator = async () => {
   const featureVectors500TokensByJournal = mapValues(
     groupBy(uniqueTop500MFeatureVectors, "JOURNAL_ID"),
     (fvGroupedByTitle) => fvGroupedByTitle.map((fv) => fv.TOKEN)
-  );
-
-  writeJson(FEATURE_VECTOR_50_TOKENS_SAVE_PATH, featureVectors50Tokens);
-  writeJson(
-    FEATURE_VECTOR_50_TOKENS_BY_JOURNAL_SAVE_PATH,
-    featureVectors50TokensByJournal
-  );
-
-  writeJson(FEATURE_VECTOR_100_TOKENS_SAVE_PATH, featureVectors100Tokens);
-  writeJson(
-    FEATURE_VECTOR_100_TOKENS_BY_JOURNAL_SAVE_PATH,
-    featureVectors100TokensByJournal
   );
 
   writeJson(FEATURE_VECTOR_200_TOKENS_SAVE_PATH, featureVectors200Tokens);
@@ -202,8 +144,6 @@ const featureVectorsGenerator = async () => {
 
   return {
     JSON_DATA: jsonData,
-    TOP_50_FEATURE_VECTORS: uniqueTop50MFeatureVectors,
-    TOP_100_FEATURE_VECTORS: uniqueTop100MFeatureVectors,
     TOP_200_FEATURE_VECTORS: uniqueTop200MFeatureVectors,
     TOP_500_FEATURE_VECTORS: uniqueTop500MFeatureVectors,
   };

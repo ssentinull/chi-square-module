@@ -74,6 +74,7 @@ const calculateChiSquareValues = (tokenList) => {
 
 // spread the tokens of the articles into a single layer array of objects
 const createTokenList = (jsonData) => {
+  let totalTokenAmount = 0;
   const tokenList = [];
   let tokenAmount = 0;
 
@@ -82,10 +83,11 @@ const createTokenList = (jsonData) => {
       JOURNAL_ID,
       JOURNAL_TITLE,
       ARTICLE_ID,
+      TOKENS,
       TOKENS_DUPLICATE_REMOVED,
     } = jsonDataRow;
 
-    tokenAmount += TOKENS_DUPLICATE_REMOVED.length;
+    totalTokenAmount += TOKENS.length;
 
     for (const token of TOKENS_DUPLICATE_REMOVED) {
       const tokenListObj = {
@@ -99,7 +101,7 @@ const createTokenList = (jsonData) => {
     }
   }
 
-  console.log("tokenAmount: ", tokenAmount);
+  console.log("totalTokenAmount: ", totalTokenAmount);
 
   return tokenList;
 };

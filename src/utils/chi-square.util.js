@@ -76,7 +76,7 @@ const calculateChiSquareValues = (tokenList) => {
 const createTokenList = (jsonData) => {
   let totalTokenAmount = 0;
   const tokenList = [];
-  let tokenAmount = 0;
+  const regexContainDigits = /\d/g;
 
   for (const jsonDataRow of jsonData) {
     const {
@@ -90,6 +90,11 @@ const createTokenList = (jsonData) => {
     totalTokenAmount += TOKENS.length;
 
     for (const token of TOKENS_DUPLICATE_REMOVED) {
+      const tokenLength = token.length;
+      const isTokenContainsDigit = regexContainDigits.test(token);
+
+      if (isTokenContainsDigit || tokenLength <= 2) continue;
+
       const tokenListObj = {
         JOURNAL_ID,
         JOURNAL_TITLE,

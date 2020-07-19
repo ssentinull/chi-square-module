@@ -1,6 +1,6 @@
 const { readJson, writeJson } = require("./io.util");
 
-const DATASET_PATH = "./data/output/dataset-sample.json";
+const DATASET_PATH = "./data/input/dataset-sample.json";
 const OUTPUT_PATH = "./src/utils/tokens-to-regex.json";
 
 (async () => {

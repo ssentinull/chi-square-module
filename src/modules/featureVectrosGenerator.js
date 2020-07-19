@@ -9,7 +9,7 @@ const {
   sortChiSquareValueDescendingly,
 } = require("../utils/chi-square.util");
 
-const DATASET_JSON_SAVE_PATH = "./data/output/dataset-sample.json";
+const DATASET_JSON_SAVE_PATH = "./data/input/dataset-sample.json";
 const CHI_SQUARE_SAVE_PATH = "./data/output/chi-square-feature-vectors.json";
 const FEATURE_VECTOR_200_TOKENS_SAVE_PATH =
   "./data/output/fv-tokens/fv-tokens-200.json";

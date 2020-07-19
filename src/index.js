@@ -32,7 +32,11 @@ const FEATURE_VECTOR_TOKENS_BY_JOURNAL_SAVE_PATH =
 
   const featureVectors = calculateChiSquareValues(tokenList);
 
-  writeJson(CHI_SQUARE_SAVE_PATH, featureVectors);
+  sortedFeatureVectors = featureVectors.sort(
+    (a, b) => b.CHI_SQUARE - a.CHI_SQUARE
+  );
+
+  writeJson(CHI_SQUARE_SAVE_PATH, sortedFeatureVectors);
 
   console.log("done creating feature vectors");
   console.timeEnd("creating-feature-vectors");

@@ -11,9 +11,9 @@ const {
 
 const DATASET_JSON_SAVE_PATH = "./data/input/dataset-sample.json";
 const CHI_SQUARE_SAVE_PATH = "./data/output/chi-square-feature-vectors.json";
-const FEATURE_VECTOR_200_TOKENS_SAVE_PATH =
+const FEATURE_VECTOR_TOKENS_SAVE_PATH =
   "./data/output/fv-tokens/fv-tokens-200.json";
-const FEATURE_VECTOR_200_TOKENS_BY_JOURNAL_SAVE_PATH =
+const FEATURE_VECTOR_TOKENS_BY_JOURNAL_SAVE_PATH =
   "./data/output/fv-tokens-by-journal/fv-tokens-by-journal-200.json";
 
 const featureVectorsGenerator = async () => {
@@ -54,7 +54,7 @@ const featureVectorsGenerator = async () => {
 
   console.time("pick-top-m-feature-vectors");
 
-  const top200MFeatureVectors = [];
+  const topMFeatureVectors = [];
 
   for (const key in featureVectorsGroupedByJournalId) {
     const groupedFeatureVectors = featureVectorsGroupedByJournalId[key];
@@ -65,12 +65,12 @@ const featureVectorsGenerator = async () => {
     const sortedFeatureVectors = sortChiSquareValueDescendingly(
       uniqueFeatureVectors
     );
-    const top200FeatureVectors = sliceTopTermsFeatureVectors(
+    const topFeatureVectors = sliceTopTermsFeatureVectors(
       sortedFeatureVectors,
-      200
+      150
     );
 
-    top200MFeatureVectors.push(...top200FeatureVectors);
+    topMFeatureVectors.push(...topFeatureVectors);
   }
 
   console.log("done picking top M feature vectors");
@@ -81,10 +81,7 @@ const featureVectorsGenerator = async () => {
 
   console.time("filtering-duplicate-feature-vectors");
 
-  const uniqueTop200MFeatureVectors = uniqBy(
-    top200MFeatureVectors,
-    (fv) => fv.TOKEN
-  );
+  const uniqueTopMFeatureVectors = uniqBy(topMFeatureVectors, (fv) => fv.TOKEN);
 
   console.log("done filtering duplicate feature vectors");
   console.timeEnd("filtering-duplicate-feature-vectors");
@@ -94,19 +91,19 @@ const featureVectorsGenerator = async () => {
 
   console.time("saving-feature-vector-tokens-as-json");
 
-  const featureVectors200Tokens = uniqueTop200MFeatureVectors.map(
+  const featureVectorsTokens = uniqueTopMFeatureVectors.map(
     (featureVector) => featureVector.TOKEN
   );
 
-  const featureVectors200TokensByJournal = mapValues(
-    groupBy(uniqueTop200MFeatureVectors, "JOURNAL_ID"),
+  const featureVectorsTokensByJournal = mapValues(
+    groupBy(uniqueTopMFeatureVectors, "JOURNAL_ID"),
     (fvGroupedByTitle) => fvGroupedByTitle.map((fv) => fv.TOKEN)
   );
 
-  writeJson(FEATURE_VECTOR_200_TOKENS_SAVE_PATH, featureVectors200Tokens);
+  writeJson(FEATURE_VECTOR_TOKENS_SAVE_PATH, featureVectorsTokens);
   writeJson(
-    FEATURE_VECTOR_200_TOKENS_BY_JOURNAL_SAVE_PATH,
-    featureVectors200TokensByJournal
+    FEATURE_VECTOR_TOKENS_BY_JOURNAL_SAVE_PATH,
+    featureVectorsTokensByJournal
   );
 
   console.log("done saving feature vector tokens as .json");
@@ -115,7 +112,7 @@ const featureVectorsGenerator = async () => {
 
   return {
     JSON_DATA: jsonData,
-    TOP_200_FEATURE_VECTORS: uniqueTop200MFeatureVectors,
+    FEATURE_VECTORS: uniqueTopMFeatureVectors,
   };
 };
 

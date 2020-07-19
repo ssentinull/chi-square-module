@@ -1,14 +1,9 @@
-const { tokensGenerator } = require("./modules/tokensGenerator");
 const {
   featureVectorsGenerator,
 } = require("./modules/featureVectrosGenerator");
 
 (async () => {
   const processBegin = Date.now();
-
-  await tokensGenerator();
-
-  //////////////////////////////
 
   const featureVectorsGeneratorResult = await featureVectorsGenerator();
 

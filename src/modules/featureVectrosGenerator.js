@@ -11,10 +11,9 @@ const {
 
 const DATASET_JSON_SAVE_PATH = "./data/input/dataset-sample.json";
 const CHI_SQUARE_SAVE_PATH = "./data/output/chi-square-feature-vectors.json";
-const FEATURE_VECTOR_TOKENS_SAVE_PATH =
-  "./data/output/fv-tokens/fv-tokens-200.json";
+const FEATURE_VECTOR_TOKENS_SAVE_PATH = "./data/output/fv-tokens.json";
 const FEATURE_VECTOR_TOKENS_BY_JOURNAL_SAVE_PATH =
-  "./data/output/fv-tokens-by-journal/fv-tokens-by-journal-200.json";
+  "./data/output/fv-tokens-by-journal.json";
 
 const featureVectorsGenerator = async () => {
   console.time("creating-feature-vectors");

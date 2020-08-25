@@ -119,8 +119,8 @@ const FEATURE_VECTOR_TOKENS_BY_JOURNAL_SAVE_PATH =
 
   console.log(
     "total execution time :",
-    (processEnd - processBegin) / 60000,
-    "minutes"
+    (processEnd - processBegin) / 1000,
+    "seconds"
   );
 })();
 

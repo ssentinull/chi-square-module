@@ -26,9 +26,11 @@ const calculateChiSquareValues = (tokenList) => {
     invertedIndex[TOKEN].push(tempObj);
   }
 
-  console.log("invertedIndex keys: ", Object.keys(invertedIndex).length);
+  console.log(
+    "\namount of inverted index keys: ",
+    Object.keys(invertedIndex).length
+  );
 
-  let invertedIndexProcessNum = 0;
   const chiSquareValues = [];
 
   for (const token in invertedIndex) {
@@ -62,11 +64,6 @@ const calculateChiSquareValues = (tokenList) => {
 
       chiSquareValues.push(tempObj);
     }
-
-    if (invertedIndexProcessNum % 10000 == 0)
-      console.log("invertedIndexProcessNum: ", invertedIndexProcessNum);
-
-    invertedIndexProcessNum++;
   }
 
   return chiSquareValues;
@@ -106,7 +103,7 @@ const createTokenList = (jsonData) => {
     }
   }
 
-  console.log("totalTokenAmount: ", totalTokenAmount);
+  console.log("\namount of tokens: ", totalTokenAmount);
 
   return tokenList;
 };

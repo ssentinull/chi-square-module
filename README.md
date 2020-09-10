@@ -18,17 +18,17 @@ $ node src/index.js
 
 This module uses a version of the chi-square equation from [[1]](#1) to calculate the dependence of a word to a journal :
 
-<center>
+<p align="center">
 
-![equation](https://latex.codecogs.com/gif.latex?X_{(t,c)}^{2}\approx\frac{(A*D-B*C)^{2}}{(A+B)*(C+D)})
+![equation](https://latex.codecogs.com/svg.latex?X_{(t,c)}^{2}\approx\frac{(A*D-B*C)^{2}}{(A+B)*(C+D)})
 
-</center>
+</p>
  
 where:
-  - ![variable-a](https://latex.codecogs.com/gif.latex?A) is the number of documents including word ![variable word](https://latex.codecogs.com/gif.latex?t), which belongs to journal ![variable journal](https://latex.codecogs.com/gif.latex?c).
-  - ![variable-b](https://latex.codecogs.com/gif.latex?B) is the number of documents including word ![variable word](https://latex.codecogs.com/gif.latex?t), which does not belong to journal ![variable journal](https://latex.codecogs.com/gif.latex?c).
-  - ![variable-c](https://latex.codecogs.com/gif.latex?C) is the number of documents in journal ![variable journal](https://latex.codecogs.com/gif.latex?c), which does not include word ![variable word](https://latex.codecogs.com/gif.latex?t).
-  - ![variable-d](https://latex.codecogs.com/gif.latex?D) is the number of documents in journals other than journal ![variable journal](https://latex.codecogs.com/gif.latex?c), which does not include word ![variable word](https://latex.codecogs.com/gif.latex?t).
+  - ![variable-a](https://latex.codecogs.com/svg.latex?A) is the number of documents including word ![variable word](https://latex.codecogs.com/svg.latex?t), which belongs to journal ![variable journal](https://latex.codecogs.com/svg.latex?c).
+  - ![variable-b](https://latex.codecogs.com/svg.latex?B) is the number of documents including word ![variable word](https://latex.codecogs.com/svg.latex?t), which does not belong to journal ![variable journal](https://latex.codecogs.com/svg.latex?c).
+  - ![variable-c](https://latex.codecogs.com/svg.latex?C) is the number of documents in journal ![variable journal](https://latex.codecogs.com/svg.latex?c), which does not include word ![variable word](https://latex.codecogs.com/svg.latex?t).
+  - ![variable-d](https://latex.codecogs.com/svg.latex?D) is the number of documents in journals other than journal ![variable journal](https://latex.codecogs.com/svg.latex?c), which does not include word ![variable word](https://latex.codecogs.com/svg.latex?t).
   
 
 ## Input

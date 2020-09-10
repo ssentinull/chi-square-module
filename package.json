@@ -27,9 +27,6 @@
     "lodash.groupby": "^4.6.0",
     "lodash.mapvalues": "^4.6.0",
     "lodash.uniqby": "^4.7.0",
-    "lower-case": "^2.0.1",
-    "natural": "^0.6.3",
-    "neat-csv": "^5.1.0",
-    "stopword": "^0.3.4"
+    "neat-csv": "^5.1.0"
   }
 }

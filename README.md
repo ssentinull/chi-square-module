@@ -19,9 +19,7 @@ $ node src/index.js
 This module uses a version of the chi-square equation from [[1]](#1) to calculate the dependence of a word to a journal :
 
 <p align="center">
-
-![equation](https://latex.codecogs.com/svg.latex?X_{(t,c)}^{2}\approx\frac{(A*D-B*C)^{2}}{(A+B)*(C+D)})
-
+  <img src="https://latex.codecogs.com/svg.latex?X_{(t,c)}^{2}\approx\frac{(A*D-B*C)^{2}}{(A+B)*(C+D)}">
 </p>
  
 where:

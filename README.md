@@ -35,7 +35,7 @@ where:
 
 The input file can be found in the `./data/input/` directory, which happens to be a `.json` file  that stores a `list` of `.json objects` with the following structure :  
 
-```json
+```
 [
   {
       "JOURNAL_ID": 0,
@@ -65,7 +65,7 @@ This module produces three different outputs that are saved in three different f
 
 1. In the directory `./data/output/fv-tokens.json`. This file is used to save the 150 aggregated words with the highest chi-square value for each journal and removes any duplicate words.
 
-    ```json
+    ```
     [
       "tanam",
       "balai",
@@ -82,7 +82,7 @@ This module produces three different outputs that are saved in three different f
 
 2. In the directory `./data/output/fv-tokens-by-journal.json`. This file is used to save the grouped 150 words with the highest chi-square values by their respectives journals.
 
-    ```json
+    ```
     {
       "0": [
         "tanam",
@@ -109,7 +109,7 @@ This module produces three different outputs that are saved in three different f
 
 3. In the directory `./data/output/chi-square-feature-vectors.json`. This file is used to log the `A`, `B`, `C`, `D`, journal ID and chi-square value for each word.
 
-    ````json
+    ````
     [
       {
         "JOURNAL_ID": 0,
